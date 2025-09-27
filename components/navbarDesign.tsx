@@ -19,8 +19,8 @@ function NavbarDesign() {
 
   
   return (
-    <header className=" relative m-0 z-100">
-      <div className=" relative top-0 w-full z-100 2xl:max-w-[1860px] mx-auto">
+    <header className=" relative m-0 z-50">
+      <div className=" relative top-0 w-full z-50 2xl:max-w-[1860px] mx-auto">
         <nav className=" relative py-5 lg:py-4.5 lg:px-10 flex items-center lg:flex-wrap lg:justify-start w-full">
           <div className=" flex flex-wrap items-center justify-between px-4 lg:px-0 p-0 w-full">
             <Link href={"/"}>
