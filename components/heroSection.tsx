@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import LeadForm from "./leadForm";
+import heroBanner from "../public/hero-banner.jpg";
 
 export default function Herosection() {
   const [openLeadForm, setOpenLeadForm] = useState(false);
@@ -24,14 +25,15 @@ export default function Herosection() {
 
   return (
     <div
-      className=" w-full h-[90vh] flex flex-col justify-center items-center text-4xl font-bold relative"
+      className=" relative w-full h-[90vh] flex flex-col justify-center items-center text-4xl font-bold"
       style={{
-        backgroundImage: `url(https://ik.imagekit.io/ajoy/Ebrahma%20Pragati/New-Ebrahma/Hero-bg.jpg?updatedAt=1756461281919)`,
+        backgroundImage: `url(${heroBanner.src})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
       }}
     >
+      <div className=" absolute inset-0 bg-[#063154]/40 w-full h-full"/>
       <div className="text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl drop-shadow-2xl text-[#F7F6F2] text-center">
         <h1
           className=""
@@ -49,7 +51,7 @@ export default function Herosection() {
 
       <button
         onClick={openModal}
-        className="mt-8 bg-[#2F9D94] text-[#F7F6F2] px-6 py-3 rounded-full text-lg font-semibold cursor-pointer transition duration-300"
+        className="z-10 mt-8 bg-[#2F9D94] text-[#F7F6F2] px-6 py-3 rounded-full text-lg font-semibold cursor-pointer transition duration-300"
       >
         Meet Our Doctors
       </button>
