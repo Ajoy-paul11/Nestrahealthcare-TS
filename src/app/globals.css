@@ -78,6 +78,14 @@ a, button {
   color: var(--accent-tertiary-color);
 }
 
+.blue-shade-bg {
+  background-color: var(--accent-color);
+}
+
+.text-white-background {
+  color: var(--background);
+}
+
 .contact-button {
   position: relative;
   display: inline-flex;

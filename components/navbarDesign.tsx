@@ -44,7 +44,7 @@ function NavbarDesign() {
                   </li>
                   <li className=" mx-1.5 relative">
                     <Link
-                      href={"/"}
+                      href="/about"
                       className=" text-base py-3.5 px-2.5 hover:text-[#2F9D94]"
                     >
                       About
@@ -52,7 +52,7 @@ function NavbarDesign() {
                   </li>
                   <li className=" mx-1.5 relative w-full group">
                     <Link
-                      href="#"
+                      href="/services"
                       className=" text-base py-3.5 px-2.5 hover:text-[#2F9D94]"
                     >
                       Services
