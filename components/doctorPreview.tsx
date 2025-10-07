@@ -96,7 +96,7 @@ function DoctorPreview() {
               href={"/doctors"}
               className=" blue-shade-bg text-white p-3 rounded-full "
             >
-              <IconArrowRight size={24} className=" group-hover:translate-x-1 transition-all group-hover:-rotate-45"/>
+              <IconArrowRight size={24} className=" transition-all group-hover:-rotate-45"/>
             </Link>
           </div>
         ))}
