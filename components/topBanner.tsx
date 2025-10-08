@@ -4,7 +4,7 @@ function TopBanner() {
   return (
     <section className=" w-full h-full green-shade-bg text-white">
       <div className=" w-full h-full py-4 lg:py-6 px-3 lg:px-8 flex justify-center lg:justify-end">
-        <div className=" flex flex-wrap justify-center items-center gap-6 lg:gap-8">
+        <div className=" flex flex-wrap justify-center items-center gap-4 lg:gap-8">
           <div className=" flex justify-center items-center">
             <div className="flex justify-center items-center gap-3 lg:gap-4">
               <div >

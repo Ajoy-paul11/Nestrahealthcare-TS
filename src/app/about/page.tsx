@@ -10,7 +10,7 @@ export default function AboutPage() {
     <div className="min-h-screen">
       <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8 blue-shade-bg text-white-background">
         <div className="max-w-7xl mx-auto text-center ">
-          <h1 className="text-5xl md:text-6xl font-bold mb-6">
+          <h1 className="text-4xl md:text-6xl font-bold mb-6">
             A Vision of Dignity, <br />
             <span className=" ">Safety & Respect</span>
           </h1>
@@ -22,10 +22,10 @@ export default function AboutPage() {
         <div className="max-w-6xl mx-auto">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-4xl font-bold text-gray-900 mb-6">
+              <h2 className=" text-2xl lg:text-4xl font-bold text-gray-900 mb-6">
                 Our Story
               </h2>
-              <div className="space-y-4 text-lg text-gray-700 leading-relaxed">
+              <div className="space-y-4 text-sm lg:text-lg text-gray-700 leading-relaxed">
                 <p>
                   Nestra Healthcare was founded with a mission: to make quality
                   senior and disability care accessible, compassionate, and
@@ -51,10 +51,10 @@ export default function AboutPage() {
 
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-[#025F67]/80">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-bold text-white mb-4 text-center">
+          <h2 className="text-2xl lg:text-4xl font-bold text-white mb-4 text-center">
             Our Philosophy
           </h2>
-          <p className="text-center text-white mb-16 text-lg">
+          <p className="text-center text-white mb-16 text-sm lg:text-lg">
             The principles that guide everything we do
           </p>
 
@@ -63,7 +63,7 @@ export default function AboutPage() {
               <div className="w-16 h-16 green-shade-bg rounded-full flex items-center justify-center mb-6">
                 <IconHeartbeat className="text-white" size={32} />
               </div>
-              <h3 className="text-2xl font-bold text-accent mb-4">
+              <h3 className="text-lg lg:text-2xl font-bold text-accent mb-4">
                 Empathy First
               </h3>
               <p className="text-gray-700 leading-relaxed">
@@ -76,7 +76,7 @@ export default function AboutPage() {
               <div className="w-16 h-16 green-shade-bg rounded-full flex items-center justify-center mb-6">
                 <IconShieldFilled className="text-white" size={32} />
               </div>
-              <h3 className="text-2xl font-bold text-accent mb-4">
+              <h3 className="text-lg lg:text-2xl font-bold text-accent mb-4">
                 Safety Always
               </h3>
               <p className="text-gray-700 leading-relaxed">
@@ -89,7 +89,7 @@ export default function AboutPage() {
               <div className="w-16 h-16 green-shade-bg rounded-full flex items-center justify-center mb-6">
                 <IconAwardFilled className="text-white" size={32} />
               </div>
-              <h3 className="text-2xl font-bold text-accent mb-4">
+              <h3 className="text-lg lg:text-2xl font-bold text-accent mb-4">
                 Excellence in Care
               </h3>
               <p className="text-gray-700 leading-relaxed">
@@ -115,10 +115,10 @@ export default function AboutPage() {
               <div className="w-16 h-16 green-shade-bg rounded-full flex items-center justify-center mb-6">
                 <IconUsers className="text-white" size={32} />
               </div>
-              <h2 className="text-4xl font-bold mb-6">
+              <h2 className="text-2xl lg:text-4xl font-bold mb-6">
                 Our Team
               </h2>
-              <div className="space-y-4 text-lg text-gray-700 leading-relaxed">
+              <div className="space-y-4 text-sm lg:text-lg text-gray-700 leading-relaxed">
                 <p>
                   Our caregivers and medical staff work hand-in-hand with
                   families to provide customized support.
@@ -135,20 +135,20 @@ export default function AboutPage() {
 
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-[#025F67] to-[#2F9D94] ">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl font-bold mb-8 text-white">Mission & Vision</h2>
+          <h2 className="text-2xl lg:text-4xl font-bold mb-8 text-white">Mission & Vision</h2>
 
           <div className="grid md:grid-cols-2 gap-8 mt-12">
             <div className="bg-white bg-opacity-10 backdrop-blur-sm rounded-2xl p-8 border border-white border-opacity-20">
-              <h3 className="text-2xl font-bold mb-4 text-accent">Mission</h3>
-              <p className="text-lg leading-relaxed">
+              <h3 className=" text-lg lg:text-2xl font-bold mb-4 text-accent">Mission</h3>
+              <p className="text-sm lg:text-lg leading-relaxed">
                 To deliver personalized care that empowers residents to live
                 fulfilling, dignified lives.
               </p>
             </div>
 
             <div className="bg-white bg-opacity-10 backdrop-blur-sm rounded-2xl p-8 border border-white border-opacity-20">
-              <h3 className="text-2xl font-bold mb-4 text-accent">Vision</h3>
-              <p className="text-lg leading-relaxed">
+              <h3 className=" text-lg lg:text-2xl font-bold mb-4 text-accent">Vision</h3>
+              <p className="text-sm lg:text-lg leading-relaxed">
                 To be Bangalore's most trusted name in senior and disability
                 care.
               </p>

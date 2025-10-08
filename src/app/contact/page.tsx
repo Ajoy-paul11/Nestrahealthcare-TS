@@ -38,11 +38,11 @@ export default function ContactPage() {
     <div className="min-h-screen ">
       <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8 blue-shade-bg text-white-background">
         <div className="max-w-7xl mx-auto text-center">
-          <h1 className="text-5xl md:text-6xl font-bold mb-6">
+          <h1 className="text-4xl md:text-6xl font-bold mb-6">
             Let's Take the <br />
             <span className="">First Step Together</span>
           </h1>
-          <p className="text-xl text-emerald-50 max-w-3xl mx-auto">
+          <p className="lg:text-xl text-emerald-50 max-w-3xl mx-auto">
             We're here to answer your questions and help you find the perfect
             care solution
           </p>
@@ -50,30 +50,30 @@ export default function ContactPage() {
         </div>
       </section>
 
-      <section className="py-20 px-4 sm:px-6 lg:px-8">
+      <section className=" py-10 lg:py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-16">
-            <div>
-              <h2 className="text-4xl font-bold text-gray-900 mb-8">
+            <div className=" overflow-hidden">
+              <h2 className=" text-2xl lg:text-4xl font-bold  mb-8 text-center">
                 Get In Touch
               </h2>
-              <p className="text-lg text-gray-700 mb-12 leading-relaxed">
+              <p className=" text-sm lg:text-lg mb-12 leading-relaxed">
                 Have questions about our services? Want to schedule a visit?
                 We'd love to hear from you.
               </p>
 
               <div className="space-y-6">
                 <div className="flex items-start space-x-4 bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300">
-                  <div className="w-12 h-12 bg-emerald-100 rounded-full flex items-center justify-center flex-shrink-0">
-                    <IconPhoneCall className="text-emerald-600" size={24} />
+                  <div className="w-12 h-12 green-shade-bg rounded-full flex items-center justify-center flex-shrink-0">
+                    <IconPhoneCall className="text-white" size={24} />
                   </div>
                   <div>
-                    <h3 className="font-bold text-gray-900 text-lg mb-2">
+                    <h3 className="font-bold text-highlight text-sm lg:text-lg mb-2">
                       Phone
                     </h3>
                     <a
                       href="tel:+91XXXXXXXXXX"
-                      className="text-emerald-600 hover:text-emerald-700 text-lg"
+                      className=" text-accent text-sm lg:text-lg"
                     >
                       +91-XXXXXXXXXX
                     </a>
@@ -81,16 +81,16 @@ export default function ContactPage() {
                 </div>
 
                 <div className="flex items-start space-x-4 bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300">
-                  <div className="w-12 h-12 bg-emerald-100 rounded-full flex items-center justify-center flex-shrink-0">
-                    <IconMail className="text-emerald-600" size={24} />
+                  <div className="w-12 h-12 green-shade-bg rounded-full flex items-center justify-center flex-shrink-0">
+                    <IconMail className="text-white" size={24} />
                   </div>
                   <div>
-                    <h3 className="font-bold text-gray-900 text-lg mb-2">
+                    <h3 className="font-bold text-highlight text-sm lg:text-lg mb-2">
                       Email
                     </h3>
                     <a
                       href="mailto:info@nestrahealthcare.com"
-                      className="text-emerald-600 hover:text-emerald-700 text-lg"
+                      className=" text-accent text-sm lg:text-lg"
                     >
                       info@nestrahealthcare.com
                     </a>
@@ -98,14 +98,14 @@ export default function ContactPage() {
                 </div>
 
                 <div className="flex items-start space-x-4 bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300">
-                  <div className="w-12 h-12 bg-emerald-100 rounded-full flex items-center justify-center flex-shrink-0">
-                    <IconMapPin className="text-emerald-600" size={24} />
+                  <div className="w-12 h-12 green-shade-bg rounded-full flex items-center justify-center flex-shrink-0">
+                    <IconMapPin className="text-white" size={24} />
                   </div>
                   <div>
-                    <h3 className="font-bold text-gray-900 text-lg mb-2">
+                    <h3 className="font-bold text-highlight text-sm lg:text-lg mb-2">
                       Location
                     </h3>
-                    <p className="text-gray-700 text-lg">
+                    <p className=" text-accent text-sm lg:text-lg">
                       Nestra Healthcare Center
                       <br />
                       Bangalore, Karnataka
@@ -117,7 +117,7 @@ export default function ContactPage() {
 
             <div>
               <div className="bg-white rounded-3xl p-8 shadow-2xl border border-gray-100">
-                <h3 className="text-3xl font-bold text-gray-900 mb-6">
+                <h3 className="text-center text-xl lg:text-3xl font-bold text-highlight mb-6">
                   Send us a Message
                 </h3>
 
@@ -194,7 +194,7 @@ export default function ContactPage() {
 
                     <button
                       type="submit"
-                      className="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-4 px-6 rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl flex items-center justify-center space-x-2"
+                      className="w-full green-shade-bg text-white font-bold py-4 px-6 rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl flex items-center justify-center space-x-2"
                     >
                       <span>Send Message</span>
                       <IconSend size={20} />
@@ -207,9 +207,9 @@ export default function ContactPage() {
         </div>
       </section>
 
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-100">
-        <div className="max-w-7xl mx-auto">
-          <h2 className="text-4xl font-bold text-gray-900 mb-8 text-center">
+      <section className=" py-10 lg:py-20 px-4 sm:px-6 lg:px-8 bg-gray-100">
+        <div className="max-w-6xl mx-auto">
+          <h2 className=" text-2xl lg:text-4xl font-bold text-highlight mb-8 text-center">
             Visit Us
           </h2>
           <div className="bg-white rounded-3xl overflow-hidden shadow-2xl">
@@ -228,25 +228,25 @@ export default function ContactPage() {
         </div>
       </section>
 
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-emerald-600 to-teal-700 text-white">
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-[#2F9D94]/90 to-[#2F9D94]/70 text-white">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl font-bold mb-6">
+          <h2 className=" text-2xl lg:text-4xl font-bold mb-6">
             At Nestra Healthcare, Your Family is Our Family
           </h2>
-          <p className="text-xl text-emerald-50 mb-8">
+          <p className="text-sm lg:text-xl text-emerald-50 mb-8">
             Reach out today — we're here to help every step of the way.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="tel:+91XXXXXXXXXX"
-              className="inline-flex items-center justify-center space-x-2 bg-white hover:bg-gray-100 text-emerald-600 font-bold text-lg px-8 py-4 rounded-full transition-all duration-300 shadow-lg hover:shadow-xl"
+              className="inline-flex items-center justify-center space-x-2 bg-white hover:bg-[#2F9D94] text-[#2F9D94] hover:text-white font-bold text-lg px-8 py-4 rounded-full transition-all duration-300 shadow-lg hover:shadow-xl"
             >
               <IconSend size={24} />
               <span>Call Us Now</span>
             </a>
             <a
               href="mailto:info@nestrahealthcare.com"
-              className="inline-flex items-center justify-center space-x-2 bg-transparent hover:bg-white hover:bg-opacity-10 text-white font-bold text-lg px-8 py-4 rounded-full transition-all duration-300 border-2 border-white"
+              className="inline-flex items-center justify-center space-x-2 bg-transparent hover:bg-white text-white hover:text-[#2F9D94] font-bold text-lg px-8 py-4 rounded-full transition-all duration-300 border-2 border-white"
             >
               <IconMail size={24} />
               <span>Send an Email</span>

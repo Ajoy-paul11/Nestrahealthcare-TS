@@ -61,11 +61,11 @@ export default function ServicesPage() {
     <div className="min-h-screen ">
       <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8 blue-shade-bg text-white-background">
         <div className="max-w-7xl mx-auto text-center">
-          <h1 className="text-5xl md:text-6xl font-bold mb-6">
+          <h1 className="text-4xl md:text-6xl font-bold mb-6">
             Care Programs Designed <br />
             <span className=" ">for Every Need</span>
           </h1>
-          <p className="text-xl text-emerald-50 max-w-3xl mx-auto">
+          <p className=" lg:text-xl text-emerald-50 max-w-3xl mx-auto">
             Comprehensive healthcare services tailored to support every stage of
             life with dignity and expertise
           </p>
@@ -75,10 +75,10 @@ export default function ServicesPage() {
 
       <section className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-4xl font-bold text-highlight mb-4 text-center">
+          <h2 className=" text-2xl lg:text-4xl font-bold text-highlight mb-4 text-center">
             Core Services
           </h2>
-          <p className="text-center text-gray-600 mb-16 text-lg">
+          <p className="text-center text-gray-600 mb-16 text-sm lg:text-lg">
             Specialized care programs designed by experts
           </p>
 
@@ -91,11 +91,11 @@ export default function ServicesPage() {
                   className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 hover:scale-105"
                 >
                   <div
-                    className={`w-16 h-16 bg-gradient-to-br ${service.color} rounded-2xl flex items-center justify-center mb-6 shadow-lg`}
+                    className={`w-12 h-12 lg:w-16 lg:h-16 bg-gradient-to-br ${service.color} rounded-2xl flex items-center justify-center mb-6 shadow-lg`}
                   >
                     <Icon className="text-white" size={32} />
                   </div>
-                  <h3 className="text-2xl font-bold text-highlight mb-4">
+                  <h3 className="text-lg lg:text-2xl font-bold text-highlight mb-4">
                     {service.title}
                   </h3>
                   <p className="text-gray-700 leading-relaxed">
@@ -110,7 +110,7 @@ export default function ServicesPage() {
 
       <section className="py-20 px-4 sm:px-6 lg:px-8 blue-shade-bg ">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-bold mb-12 text-center text-white">
+          <h2 className=" text-2xl lg:text-4xl font-bold mb-12 text-center text-white">
             Why Choose Nestra?
           </h2>
 
@@ -123,7 +123,7 @@ export default function ServicesPage() {
                 <div className="flex-shrink-0">
                   <IconCircleCheckFilled className=" text-highlight" size={28} />
                 </div>
-                <p className="text-lg leading-relaxed capitalize">{benefit}</p>
+                <p className=" text-sm lg:text-lg leading-relaxed capitalize">{benefit}</p>
               </div>
             ))}
           </div>
@@ -131,7 +131,7 @@ export default function ServicesPage() {
           <div className="mt-16 text-center">
             <Link
               href="/contact"
-              className="inline-flex items-center space-x-2 bg-[#2F9D94]  text-white font-bold text-lg px-8 py-4 rounded-full transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105 group"
+              className="inline-flex items-center space-x-2 bg-[#2F9D94]  text-white font-bold text-sm lg:text-lg px-8 py-4 rounded-full transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105 group"
             >
               <span>Book a Consultation</span>
               <IconArrowRight size={24} className="group-hover:translate-x-2 group-hover:-rotate-45 transition-all duration-300"/>
@@ -143,16 +143,16 @@ export default function ServicesPage() {
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-6xl mx-auto">
           <div className="bg-gradient-to-br from-[#2F9D94]/60 to-[#2F9D94]/20 rounded-3xl p-12 text-center">
-            <h2 className="text-3xl md:text-4xl font-bold text-highlight mb-6">
+            <h2 className="text-2xl lg:text-4xl font-bold text-highlight mb-6">
               Ready to Experience Quality Care?
             </h2>
-            <p className="text-lg text-gray-700 mb-8 max-w-2xl mx-auto">
+            <p className=" text-sm lg:text-lg text-gray-700 mb-8 max-w-2xl mx-auto">
               Our team is ready to discuss how we can support you and your loved
               ones with personalized care programs.
             </p>
             <Link
               href="/doctors"
-              className="inline-flex items-center space-x-2 blue-shade-bg text-white font-bold text-lg px-8 py-4 rounded-full transition-all duration-300 shadow-lg hover:shadow-xl group"
+              className="inline-flex items-center space-x-2 blue-shade-bg text-white font-bold text-sm lg:text-lg px-8 py-4 rounded-full transition-all duration-300 shadow-lg hover:shadow-xl group"
             >
               <span>Meet Our Doctors</span>
               <IconArrowRight size={24} className="group-hover:translate-x-2 group-hover:-rotate-45 transition-all duration-300"/>

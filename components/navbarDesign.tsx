@@ -2,13 +2,9 @@
 
 import Link from "next/link";
 import React, { useState } from "react";
-import logo from '../public/180x60.png';
+import logo from "../public/180x60.png";
 import mobileLogo from "../public/120x40.png";
-import {
-  IconBrandXing,
-  IconMenuDeep,
-} from "@tabler/icons-react";
-
+import { IconBrandXing, IconMenuDeep } from "@tabler/icons-react";
 
 function NavbarDesign() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState<Boolean>(false);
@@ -17,7 +13,6 @@ function NavbarDesign() {
     setMobileMenuOpen((prev) => !prev);
   };
 
-  
   return (
     <header className=" relative m-0 z-50">
       <div className=" relative top-0 w-full z-50 2xl:max-w-[1860px] mx-auto">
@@ -25,8 +20,18 @@ function NavbarDesign() {
           <div className=" flex flex-wrap items-center justify-between px-4 lg:px-0 p-0 w-full">
             <Link href={"/"}>
               <picture>
-                <source media="(min-width: 1024px)" srcSet={logo.src} width={180} height={60}/>
-                <source media="(max-width: 1023px)" srcSet={mobileLogo.src} width={120} height={40}/>
+                <source
+                  media="(min-width: 1024px)"
+                  srcSet={logo.src}
+                  width={180}
+                  height={60}
+                />
+                <source
+                  media="(max-width: 1023px)"
+                  srcSet={mobileLogo.src}
+                  width={120}
+                  height={40}
+                />
                 <img src={logo.src} alt="Logo" />
               </picture>
             </Link>
@@ -50,6 +55,14 @@ function NavbarDesign() {
                       About
                     </Link>
                   </li>
+                  <li className=" mx-1.5 relative">
+                    <Link
+                      href="/doctors"
+                      className=" text-base py-3.5 px-2.5 hover:text-[#2F9D94]"
+                    >
+                      Doctors
+                    </Link>
+                  </li>
                   <li className=" mx-1.5 relative w-full group">
                     <Link
                       href="/services"
@@ -60,7 +73,7 @@ function NavbarDesign() {
                   </li>
                   <li className=" mx-1.5 relative">
                     <Link
-                      href='/contact'
+                      href="/contact"
                       className=" text-base py-3.5 px-2.5 hover:text-[#2F9D94]"
                     >
                       Contact
@@ -97,7 +110,7 @@ function NavbarDesign() {
             <ul className=" my-1 clear-both list-none overflow-hidden p-0">
               <li className=" block lg:hidden py-2 px-5">
                 <Link
-                  href="/home"
+                  href="/"
                   className=" relative text-base font-normal  m-0 rounded-none"
                 >
                   Home
@@ -113,7 +126,15 @@ function NavbarDesign() {
               </li>
               <li className=" block lg:hidden py-2 px-5">
                 <Link
-                  href="#"
+                  href="/doctors"
+                  className=" relative text-base font-normal  m-0 rounded-none"
+                >
+                  Doctors
+                </Link>
+              </li>
+              <li className=" block lg:hidden py-2 px-5">
+                <Link
+                  href="/services"
                   className=" relative text-base font-normal m-0 rounded-none"
                 >
                   Services
