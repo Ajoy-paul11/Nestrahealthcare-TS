@@ -25,6 +25,8 @@ function LeadForm({ setOpenLeadForm }: LeadFormProps) {
 
   const [isSubmitting, setIsSubmitting] = useState<boolean>(false);
 
+  const sheetAPI = "https://script.google.com/macros/s/AKfycbwVNrZXcqy0sD1qxZfvo1xDZ_DTTygdLrwx2YL9xDp44L0wy8W38dD2VBbOpyl1W3FO/exec";
+
   const onSubmit: SubmitHandler<FormData> = async (data) => {
     try {
       setIsSubmitting(true);
@@ -63,9 +65,9 @@ function LeadForm({ setOpenLeadForm }: LeadFormProps) {
   };
 
   return (
-    <section className=" w-full h-screen flex justify-center lg:justify-end items-center bg-white/10 backdrop-blur-xs z-100">
-      <div className=" bg-[#263c28] relative border-[#F7C35F] border-1 rounded-3xl w-[80vw] md:w-[40vw] lg:w-[30vw] xl:w-[25vw] 2xl:w-[20vw] p-4 m-2 md:m-6 lg:m-12 xl:m-16 pt-16">
-        <div className=" bg-[#111b12] p-2 rounded-2xl absolute right-2 top-2 cursor-pointer">
+    <section className=" w-full h-screen flex justify-center lg:justify-end items-center backdrop-blur-xs z-100">
+      <div className=" blue-shade-bg relative  border-1 rounded-3xl w-[80vw] md:w-[40vw] lg:w-[30vw] xl:w-[25vw] 2xl:w-[20vw] p-4 m-2 md:m-6 lg:m-12 xl:m-16 pt-16">
+        <div className=" green-shade-bg p-2 rounded-2xl absolute right-2 top-2 cursor-pointer">
           <RxCross1
             className="h-4 w-4 text-white float-right cursor-pointer"
             onClick={() => setOpenLeadForm(false)}
@@ -92,7 +94,7 @@ function LeadForm({ setOpenLeadForm }: LeadFormProps) {
               type="text"
               placeholder="Your Name"
               required
-              className="bg-[#111b12] p-3 md:p-4 text-white rounded-2xl border-none focus:outline-[#F7C35F] focus:outline-1"
+              className=" bg-[#F7f6F2] p-3 md:p-4  rounded-2xl outline-none "
               {...register("name", {
                 required: "Name is required",
               })}
@@ -102,7 +104,7 @@ function LeadForm({ setOpenLeadForm }: LeadFormProps) {
               type="email"
               placeholder="Your Email"
               required
-              className="bg-[#111b12] p-3 md:p-4 text-white rounded-2xl border-none focus:outline-[#F7C35F] focus:outline-1"
+              className=" bg-[#F7f6F2] p-3 md:p-4  rounded-2xl outline-none "
               {...register("email", {
                 required: "Email is required",
                 pattern: {
@@ -115,7 +117,7 @@ function LeadForm({ setOpenLeadForm }: LeadFormProps) {
               type="tel"
               placeholder=" Your Mobile Number"
               required
-              className="bg-[#111b12] p-3 md:p-4 text-white rounded-2xl border-none focus:outline-[#F7C35F] focus:outline-1"
+              className=" bg-[#F7f6F2] p-3 md:p-4  rounded-2xl outline-none "
               {...register("phone", {
                 required: "Phone number is required",
                 pattern: {
@@ -128,7 +130,7 @@ function LeadForm({ setOpenLeadForm }: LeadFormProps) {
               placeholder="Your Message"
               rows={3}
               required
-              className="bg-[#111b12] p-3 md:p-4 text-white rounded-2xl focus:outline-[#F7C35F] focus:outline-1"
+              className=" bg-[#F7f6F2] p-3 md:p-4  rounded-2xl outline-none"
               {...register("message", {
                 required: "Message is required",
               })}
@@ -136,7 +138,7 @@ function LeadForm({ setOpenLeadForm }: LeadFormProps) {
             <button
               type="submit"
               disabled={isSubmitting}
-              className="w-fit mx-auto bg-[#F7C35F] text-[#263C28] font-semibold px-4 py-2 rounded-4xl flex items-center justify-center cursor-pointer text-sm md:text-base"
+              className="w-fit mx-auto bg-[#2F9D94] text-white font-semibold px-4 py-2 rounded-4xl flex items-center justify-center cursor-pointer text-sm md:text-base"
             >
               {isSubmitting ? "Sending..." : "Send Message"}
               <IconSend className="ml-2 h-5 w-5" />

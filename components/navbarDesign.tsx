@@ -39,10 +39,10 @@ function NavbarDesign() {
             <div className=" hidden lg:flex items-center basis-auto">
               <div className=" flex flex-1 mx-[1.042vw]">
                 <ul className=" inline-flex items-center list-none p-0 py-[0.5rem]">
-                  <li className=" mx-1.5 relative">
+                  <li className=" mx-1.5 relative ">
                     <Link
                       href={"/"}
-                      className=" text-base py-3.5 px-2.5 hover:text-[#2F9D94]"
+                      className=" text-base py-3 px-2.5 hover:text-[#063154] relative border-b-2 border-transparent hover:border-[#063154] transition-colors duration-300"
                     >
                       Home
                     </Link>
@@ -50,7 +50,7 @@ function NavbarDesign() {
                   <li className=" mx-1.5 relative">
                     <Link
                       href="/about"
-                      className=" text-base py-3.5 px-2.5 hover:text-[#2F9D94]"
+                      className=" text-base py-3 px-2.5 hover:text-[#063154] relative border-b-2 border-transparent hover:border-[#063154] transition-colors duration-300"
                     >
                       About
                     </Link>
@@ -58,15 +58,15 @@ function NavbarDesign() {
                   <li className=" mx-1.5 relative">
                     <Link
                       href="/doctors"
-                      className=" text-base py-3.5 px-2.5 hover:text-[#2F9D94]"
+                      className=" text-base py-3 px-2.5 hover:text-[#063154] relative border-b-2 border-transparent hover:border-[#063154] transition-colors duration-300"
                     >
                       Doctors
                     </Link>
                   </li>
-                  <li className=" mx-1.5 relative w-full group">
+                  <li className=" mx-1.5 relative w-full">
                     <Link
                       href="/services"
-                      className=" text-base py-3.5 px-2.5 hover:text-[#2F9D94]"
+                      className=" text-base py-3 px-2.5 hover:text-[#063154] relative border-b-2 border-transparent hover:border-[#063154] transition-colors duration-300"
                     >
                       Services
                     </Link>
@@ -74,7 +74,7 @@ function NavbarDesign() {
                   <li className=" mx-1.5 relative">
                     <Link
                       href="/contact"
-                      className=" text-base py-3.5 px-2.5 hover:text-[#2F9D94]"
+                      className=" text-base py-3 px-2.5 hover:text-[#063154] relative border-b-2 border-transparent hover:border-[#063154] transition-colors duration-300"
                     >
                       Contact
                     </Link>
