@@ -9,9 +9,6 @@ import { RxCross1 } from "react-icons/rx";
 import { IconSend } from "@tabler/icons-react";
 
 interface FormData {
-  access_key: string;
-  subject: string;
-  from_name: string;
   name: string;
   email: string;
   phone: string;
@@ -25,35 +22,32 @@ function LeadForm({ setOpenLeadForm }: LeadFormProps) {
 
   const [isSubmitting, setIsSubmitting] = useState<boolean>(false);
 
-  const sheetAPI = "https://script.google.com/macros/s/AKfycbwVNrZXcqy0sD1qxZfvo1xDZ_DTTygdLrwx2YL9xDp44L0wy8W38dD2VBbOpyl1W3FO/exec";
+  const sheetAPI =
+    "https://script.google.com/macros/s/AKfycbwVNrZXcqy0sD1qxZfvo1xDZ_DTTygdLrwx2YL9xDp44L0wy8W38dD2VBbOpyl1W3FO/exec";
 
   const onSubmit: SubmitHandler<FormData> = async (data) => {
     try {
       setIsSubmitting(true);
-      const response = await fetch("https://api.web3forms.com/submit", {
+      console.log(data);
+
+      const formBody = new URLSearchParams(data as any).toString();
+
+      await fetch(sheetAPI, {
         method: "POST",
+        mode: "no-cors",
         headers: {
-          "Content-Type": "application/json",
-          Accept: "application/json",
+          "Content-Type": "application/x-www-form-urlencoded",
         },
-        body: JSON.stringify(data),
+        body: formBody,
       });
 
-      const result = await response.json();
+      reset();
+      setOpenLeadForm(false);
 
-      if (result.success) {
-        toast.success("Message sent successfully!", {
-          duration: 5000,
-          position: "top-center",
-        });
-
-        reset();
-      } else {
-        toast.error("Something went wrong. Please try again later.", {
-          duration: 5000,
-          position: "top-center",
-        });
-      }
+      toast.success("Message sent successfully!", {
+        duration: 5000,
+        position: "top-center",
+      });
     } catch (error) {
       toast.error("An error occurred. Please try again later.", {
         duration: 5000,
@@ -74,21 +68,6 @@ function LeadForm({ setOpenLeadForm }: LeadFormProps) {
           />
         </div>
         <form onSubmit={handleSubmit(onSubmit)} className="">
-          <input
-            type="hidden"
-            defaultValue="215656cf-6822-4295-a464-341673bfb290"
-            {...register("access_key")}
-          />
-          <input
-            type="hidden"
-            defaultValue="New Website Inquiry"
-            {...register("subject")}
-          />
-          <input
-            type="hidden"
-            value="Pragathi Infra Realty"
-            {...register("from_name")}
-          />
           <div className="grid grid-cols-1 gap-4 xl:gap-8 text-sm lg:text-base xl:text-lg">
             <input
               type="text"
