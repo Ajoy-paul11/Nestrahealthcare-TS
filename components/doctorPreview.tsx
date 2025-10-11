@@ -1,5 +1,5 @@
 import Image from "next/image";
-import doctor from "../public/180x60.png";
+import doctor from "../public/doctor-demo-image.jpg";
 import Link from "next/link";
 import {
   IconArrowRight,
@@ -11,6 +11,7 @@ import {
   IconBrandLinkedinFilled,
 } from "@tabler/icons-react";
 
+
 const doctorDetails = [
   {
     name: "Dr. Ramaswami Rao",
@@ -18,27 +19,27 @@ const doctorDetails = [
     image: doctor,
   },
   {
-    name: "Dr. Ramaswami Rao",
+    name: "Dr. Rajesh Kumar",
     title: "Senior Geriatric Specialist, MBBS, MD in Geriatrics",
     image: doctor,
   },
   {
-    name: "Dr. Ramaswami Rao",
+    name: "Dr. Anmol Shetty",
     title: "Senior Geriatric Specialist, MBBS, MD in Geriatrics",
     image: doctor,
   },
   {
-    name: "Dr. Ramaswami Rao",
+    name: "Dr. Ananya Gowda",
     title: "Senior Geriatric Specialist, MBBS, MD in Geriatrics",
     image: doctor,
   },
   {
-    name: "Dr. Ramaswami Rao",
+    name: "Dr. Shriya Venkateswari",
     title: "Senior Geriatric Specialist, MBBS, MD in Geriatrics",
     image: doctor,
   },
   {
-    name: "Dr. Ramaswami Rao",
+    name: "Dr. Rohan Mehta",
     title: "Senior Geriatric Specialist, MBBS, MD in Geriatrics",
     image: doctor,
   },

@@ -6,6 +6,7 @@ import {
   IconCalendarWeek,
   IconHeart,
 } from "@tabler/icons-react";
+import docImage from "../../../public/doctor-demo-image.jpg";
 
 export default function DoctorsPage() {
   const doctors = [
@@ -17,7 +18,7 @@ export default function DoctorsPage() {
       expertise: "Dementia care, long-term geriatric management",
       approach: "Patient-centered, empathetic, and family-inclusive care",
       image:
-        "https://images.pexels.com/photos/5215024/pexels-photo-5215024.jpeg?auto=compress&cs=tinysrgb&w=800",
+        docImage.src,
     },
     {
       name: "Dr. Rohan Mehta",
@@ -27,7 +28,7 @@ export default function DoctorsPage() {
       expertise: "Post-surgery rehab, stroke recovery, mobility assistance",
       approach: "Hands-on therapy with tailored exercise plans",
       image:
-        "https://images.pexels.com/photos/5452293/pexels-photo-5452293.jpeg?auto=compress&cs=tinysrgb&w=800",
+        docImage.src,
     },
   ];
 
@@ -89,7 +90,7 @@ export default function DoctorsPage() {
                     <img
                       src={doctor.image}
                       alt={doctor.name}
-                      className="w-full h-full object-cover"
+                      className="w-full h-full object-contain"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-transparent to-transparent"></div>
                     <div className="absolute bottom-6 left-6 text-white">

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import footerLogo from "../public/logo2.png";
 
 
@@ -7,7 +8,7 @@ function Footer() {
         <div
           className=" p-6 lg:p-12"
         //   style={{
-        //     backgroundImage: `url(https://ik.imagekit.io/ajoy/Ebrahma%20Pragati/footer-image.webp?updatedAt=1755955168752)`,
+        //     backgroundImage: `url(https://ik.imagekit.io/Linkjoy/Ebrahma%20Pragati/footer-image.webp?updatedAt=1755955168752)`,
         //     backgroundSize: "cover",
         //     backgroundPosition: "bottom",
         //     backgroundRepeat: "no-repeat",
@@ -28,17 +29,17 @@ function Footer() {
   
               {/* Navigation Links */}
               <nav className="flex flex-wrap gap-6 text-sm">
-                {/* <a href="#" className="hover:text-accent transition-colors">About</a>
-                <a href="#" className="hover:text-accent transition-colors">Projects</a>
-                <a href="#" className="hover:text-accent transition-colors">Invest</a>
-                <a href="#" className="hover:text-accent transition-colors">Blog</a>
-                <a href="#" className="hover:text-accent transition-colors">Contact</a> */}
-                <a href="#" className="hover:text-accent transition-colors">
+                <Link href="/" className="hover:text-accent transition-colors">Home</Link>
+                <Link href="/about" className="hover:text-accent transition-colors">About</Link>
+                <Link href="/doctors" className="hover:text-accent transition-colors">Doctors</Link>
+                <Link href="/services" className="hover:text-accent transition-colors">Services</Link>
+                <Link href="/contact" className="hover:text-accent transition-colors">Contact</Link>
+                {/* <Link> href="#" className="hover:text-accent transition-colors">
                   Privacy Policy
-                </a>
-                <a href="#" className="hover:text-accent transition-colors">
+                </Link>
+                <Link> href="#" className="hover:text-accent transition-colors">
                   Terms of Service
-                </a>
+                </Link> */}
               </nav>
   
               {/* Copyright */}

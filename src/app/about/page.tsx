@@ -4,6 +4,8 @@ import {
   IconShieldFilled,
   IconUsers,
 } from "@tabler/icons-react";
+import aboutImg1 from "../../../public/about1.jpg";
+import aboutImg2 from "../../../public/doc-team-image.avif";
 
 export default function AboutPage() {
   return (
@@ -40,7 +42,7 @@ export default function AboutPage() {
             </div>
             <div className="relative h-96 rounded-2xl overflow-hidden shadow-2xl">
               <img
-                src="https://images.pexels.com/photos/7551661/pexels-photo-7551661.jpeg?auto=compress&cs=tinysrgb&w=800"
+                src={aboutImg1.src}
                 alt="Healthcare facility"
                 className="w-full h-full object-cover"
               />
@@ -106,9 +108,9 @@ export default function AboutPage() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="relative h-96 rounded-2xl overflow-hidden shadow-2xl order-2 md:order-1">
               <img
-                src="https://images.pexels.com/photos/7551659/pexels-photo-7551659.jpeg?auto=compress&cs=tinysrgb&w=800"
+                src={aboutImg2.src}
                 alt="Our team"
-                className="w-full h-full object-cover"
+                className="w-full h-full object-contain"
               />
             </div>
             <div className="order-1 md:order-2">
