@@ -23,7 +23,7 @@ function LeadForm({ setOpenLeadForm }: LeadFormProps) {
   const [isSubmitting, setIsSubmitting] = useState<boolean>(false);
 
   const sheetAPI =
-    "https://script.google.com/macros/s/AKfycbwVNrZXcqy0sD1qxZfvo1xDZ_DTTygdLrwx2YL9xDp44L0wy8W38dD2VBbOpyl1W3FO/exec";
+    "https://script.google.com/macros/s/AKfycbzGCI2uo5A8LEtpDJMXO4JuEYQwyigVYUpV1tlaYshRx1GrXIypukJDhUFTHpFw-oQbDQ/exec";
 
   const onSubmit: SubmitHandler<FormData> = async (data) => {
     try {

@@ -24,7 +24,7 @@ export default function ContactPage() {
   const [isSubmitting, setIsSubmitting] = useState<boolean>(false);
 
   const sheetAPI =
-    "https://script.google.com/macros/s/AKfycbwVNrZXcqy0sD1qxZfvo1xDZ_DTTygdLrwx2YL9xDp44L0wy8W38dD2VBbOpyl1W3FO/exec";
+    "https://script.google.com/macros/s/AKfycbzGCI2uo5A8LEtpDJMXO4JuEYQwyigVYUpV1tlaYshRx1GrXIypukJDhUFTHpFw-oQbDQ/exec";
 
   const onSubmit: SubmitHandler<FormData> = async (data) => {
     try {
@@ -200,9 +200,12 @@ export default function ContactPage() {
                       />
                     </div>
                     <div>
-                      <label htmlFor="phone"
-                      className="block text-gray-700 font-semibold mb-2"
-                      >Phone</label>
+                      <label
+                        htmlFor="phone"
+                        className="block text-gray-700 font-semibold mb-2"
+                      >
+                        Phone
+                      </label>
                       <input
                         type="tel"
                         placeholder=" Your Mobile Number"

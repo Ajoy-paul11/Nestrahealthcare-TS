@@ -71,7 +71,7 @@ function Footer() {
               <br />
               <div className="flex justify-center items-center gap-6 mt-2">
                 <div className=" border border-white rounded-xl p-1">
-                <Link href="https://www.facebook.com/profile.php?id=61582729811760/" target="_blank"> 
+                <Link href="https://www.facebook.com/people/Nestra-Health-Care/61582729811760/" target="_blank"> 
                   <IconBrandFacebookFilled
                    size={24}
                    className=" hover:text-accent cursor-pointer"
