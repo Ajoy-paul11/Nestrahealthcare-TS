@@ -57,7 +57,8 @@ function NavbarDesign() {
                   </li>
                   <li className=" mx-1.5 relative">
                     <Link
-                      href="/doctors"
+                      // href="/doctors"
+                      href="#"
                       className=" text-base py-3 px-2.5 hover:text-[#063154] relative border-b-2 border-transparent hover:border-[#063154] transition-colors duration-300"
                     >
                       Doctors
@@ -65,7 +66,8 @@ function NavbarDesign() {
                   </li>
                   <li className=" mx-1.5 relative w-full">
                     <Link
-                      href="/services"
+                      // href="/services"
+                      href="#"
                       className=" text-base py-3 px-2.5 hover:text-[#063154] relative border-b-2 border-transparent hover:border-[#063154] transition-colors duration-300"
                     >
                       Services

@@ -29,7 +29,7 @@ export default function AboutPage() {
               </h2>
               <div className="space-y-4 text-sm lg:text-lg text-gray-700 leading-relaxed">
                 <p>
-                  Nestra Healthcare was founded with a mission: to make quality
+                  Nestra Healthcare was founded with a mission to make quality
                   senior and disability care accessible, compassionate, and
                   professional.
                 </p>
@@ -103,7 +103,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+      {/* <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-6xl mx-auto">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="relative h-96 rounded-2xl overflow-hidden shadow-2xl order-2 md:order-1">
@@ -133,7 +133,7 @@ export default function AboutPage() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-[#025F67] to-[#2F9D94] ">
         <div className="max-w-4xl mx-auto text-center">

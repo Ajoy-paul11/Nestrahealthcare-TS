@@ -14,7 +14,7 @@ export default function Home() {
       <AboutSection />
       <MarqueeSection />
       <VideoSection />
-      <DoctorPreview />
+      {/* <DoctorPreview /> */}
       <ReviewsCarousel />
     </section>
   );

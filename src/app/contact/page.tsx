@@ -7,31 +7,55 @@ import {
   IconPhoneCall,
   IconSend,
 } from "@tabler/icons-react";
+import { useForm } from "react-hook-form";
+import type { SubmitHandler } from "react-hook-form";
+import toast from "react-hot-toast";
+
+interface FormData {
+  name: string;
+  email: string;
+  phone: string;
+  message: string;
+}
 
 export default function ContactPage() {
-  const [formData, setFormData] = useState({
-    name: "",
-    contact: "",
-    message: "",
-  });
-  const [isSubmitted, setIsSubmitted] = useState(false);
+  const { register, handleSubmit, reset } = useForm<FormData>();
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSubmitted(true);
-    setTimeout(() => {
-      setIsSubmitted(false);
-      setFormData({ name: "", contact: "", message: "" });
-    }, 3000);
-  };
+  const [isSubmitting, setIsSubmitting] = useState<boolean>(false);
 
-  const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-  ) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value,
-    });
+  const sheetAPI =
+    "https://script.google.com/macros/s/AKfycbwVNrZXcqy0sD1qxZfvo1xDZ_DTTygdLrwx2YL9xDp44L0wy8W38dD2VBbOpyl1W3FO/exec";
+
+  const onSubmit: SubmitHandler<FormData> = async (data) => {
+    try {
+      setIsSubmitting(true);
+      console.log(data);
+
+      const formBody = new URLSearchParams(data as any).toString();
+
+      await fetch(sheetAPI, {
+        method: "POST",
+        mode: "no-cors",
+        headers: {
+          "Content-Type": "application/x-www-form-urlencoded",
+        },
+        body: formBody,
+      });
+
+      reset();
+
+      toast.success("Message sent successfully!", {
+        duration: 5000,
+        position: "top-center",
+      });
+    } catch (error) {
+      toast.error("An error occurred. Please try again later.", {
+        duration: 5000,
+        position: "top-center",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -121,7 +145,7 @@ export default function ContactPage() {
                   Send us a Message
                 </h3>
 
-                {isSubmitted ? (
+                {isSubmitting ? (
                   <div className="text-center py-12">
                     <div className="w-20 h-20 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-6">
                       <IconCheck className="text-emerald-600" size={40} />
@@ -134,7 +158,7 @@ export default function ContactPage() {
                     </p>
                   </div>
                 ) : (
-                  <form onSubmit={handleSubmit} className="space-y-6">
+                  <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
                     <div>
                       <label
                         htmlFor="name"
@@ -144,13 +168,12 @@ export default function ContactPage() {
                       </label>
                       <input
                         type="text"
-                        id="name"
-                        name="name"
-                        value={formData.name}
-                        onChange={handleChange}
+                        placeholder="Your Name"
                         required
-                        className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent transition-all"
-                        placeholder="Your full name"
+                        className=" w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent transition-all"
+                        {...register("name", {
+                          required: "Name is required",
+                        })}
                       />
                     </div>
 
@@ -159,17 +182,39 @@ export default function ContactPage() {
                         htmlFor="contact"
                         className="block text-gray-700 font-semibold mb-2"
                       >
-                        Phone / Email
+                        Email
                       </label>
+
                       <input
-                        type="text"
-                        id="contact"
-                        name="contact"
-                        value={formData.contact}
-                        onChange={handleChange}
+                        type="email"
+                        placeholder="Your Email"
                         required
-                        className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent transition-all"
-                        placeholder="Best way to reach you"
+                        className=" w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent transition-all"
+                        {...register("email", {
+                          required: "Email is required",
+                          pattern: {
+                            value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
+                            message: "Invalid email address",
+                          },
+                        })}
+                      />
+                    </div>
+                    <div>
+                      <label htmlFor="phone"
+                      className="block text-gray-700 font-semibold mb-2"
+                      >Phone</label>
+                      <input
+                        type="tel"
+                        placeholder=" Your Mobile Number"
+                        required
+                        className=" w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent transition-all"
+                        {...register("phone", {
+                          required: "Phone number is required",
+                          pattern: {
+                            value: /^[0-9]{10}$/,
+                            message: "Invalid phone number",
+                          },
+                        })}
                       />
                     </div>
 
@@ -178,26 +223,26 @@ export default function ContactPage() {
                         htmlFor="message"
                         className="block text-gray-700 font-semibold mb-2"
                       >
-                        Message / Request
+                        Message
                       </label>
                       <textarea
-                        id="message"
-                        name="message"
-                        value={formData.message}
-                        onChange={handleChange}
+                        placeholder="Tell Us How can we help you..."
+                        rows={3}
                         required
-                        rows={5}
-                        className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent transition-all resize-none"
-                        placeholder="Tell us how we can help (Schedule Visit, Callback, Info)"
-                      />
+                        className="  w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent transition-all"
+                        {...register("message", {
+                          required: "Message is required",
+                        })}
+                      ></textarea>
                     </div>
 
                     <button
                       type="submit"
-                      className="w-full green-shade-bg text-white font-bold py-4 px-6 rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl flex items-center justify-center space-x-2"
+                      disabled={isSubmitting}
+                      className="w-fit mx-auto bg-[#2F9D94] text-white font-semibold px-4 py-2 rounded-4xl flex items-center justify-center cursor-pointer text-sm md:text-base"
                     >
-                      <span>Send Message</span>
-                      <IconSend size={20} />
+                      {isSubmitting ? "Sending..." : "Send Message"}
+                      <IconSend className="ml-2 h-5 w-5" />
                     </button>
                   </form>
                 )}

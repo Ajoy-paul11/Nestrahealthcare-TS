@@ -1,18 +1,14 @@
 import scrooImg1 from "../public/scroll1.jpg";
 import scrollImg2 from "../public/scroll2.jpg";
 import scrollImg3 from "../public/scroll3.jpg";
-import scrollImg4 from "../public/scroll4.jpg";
-import scrollImg5 from "../public/scroll5.jpg";
-import scrollImg6 from "../public/scroll6.jpg";
+
 import { useEffect, useState } from "react";
 
 const slides = [
   scrooImg1,
   scrollImg2,
   scrollImg3,
-  scrollImg4,
-  scrollImg5,
-  scrollImg6,
+  
 ];
 function VideoSection() {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -30,7 +26,7 @@ function VideoSection() {
   };
 
   return (
-    <div className="relative w-full h-[700px] overflow-hidden">
+    <div className="relative w-full h-[750px] overflow-hidden">
       {/* Image Container */}
       <div className="relative w-full h-full">
         {slides.map((slide, index) => (
@@ -55,12 +51,12 @@ function VideoSection() {
         style={{ textShadow: "2px 2px 4px rgba(0,0,0,0.7)" }}
         className="absolute inset-0 flex flex-col justify-center items-center text-[#F7F6F2] z-10"
       >
-        <div className="pb-2.5 text-2xl font-medium capitalize "
+        <div className="pb-2.5 text-2xl md:text-3xl font-medium capitalize "
         style={{ textShadow: "2px 2px 4px rgba(0,0,0,0.7)" }}
         >
           Nestra Health Care
         </div>
-        <div className="text-4xl font-medium pb-2.5 text-center px-4 capitalize"
+        <div className="text-3xl lg:text-5xl font-medium pb-2.5 text-center px-4 capitalize"
         style={{ textShadow: "2px 2px 4px rgba(0,0,0,0.7)" }}
         >
           Happiness lives here
