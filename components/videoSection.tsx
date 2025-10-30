@@ -36,18 +36,18 @@ function VideoSection() {
               index === currentIndex ? "opacity-100" : "opacity-0"
             }`}
           > 
-            <div className="absolute inset-0 bg-black opacity-25"></div>
+            {/* <div className="absolute inset-0 bg-black opacity-25"></div> */}
             <img
               src={slide.src}
               alt={`Slide ${index + 1}`}
-              className="w-full h-full object-cover"
+              className="w-full h-full object-contain"
             />
           </div>
         ))}
       </div>
 
       {/* Overlay Text */}
-      <div
+      {/* <div
         style={{ textShadow: "2px 2px 4px rgba(0,0,0,0.7)" }}
         className="absolute inset-0 flex flex-col justify-center items-center text-[#F7F6F2] z-10"
       >
@@ -63,7 +63,7 @@ function VideoSection() {
           <br />
           and so you can
         </div>
-      </div>
+      </div> */}
 
       {/* Navigation Dots */}
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex gap-3 z-20">
@@ -73,8 +73,8 @@ function VideoSection() {
             onClick={() => goToSlide(index)}
             className={`w-3 h-3 rounded-full transition-all duration-300 ${
               index === currentIndex
-                ? "bg-white scale-125"
-                : "bg-white/50 hover:bg-white/75"
+                ? "bg-blue-100 scale-125"
+                : "bg-blue-500 hover:bg-blue-200 cursor-pointer"
             }`}
             aria-label={`Go to slide ${index + 1}`}
           />

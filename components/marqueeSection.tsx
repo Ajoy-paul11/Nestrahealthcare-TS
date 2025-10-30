@@ -16,22 +16,22 @@ function MarqueeSection() {
             <div className=" inline-flex items-center gap-4 mx-10">
               <IconHomeHeart size={30} />
               <span className=" uppercase text-xl lg:text-3xl">
-                Elderly Residential Care
+              Care that feels like home
               </span>
             </div>
             <div className=" inline-flex items-center gap-4 mx-10">
               <IconLivePhoto size={30} />
               <span className=" uppercase text-xl lg:text-3xl">
-                Memory & Dementia Support
+              Where dignity meets comfort
               </span>
             </div>
             <div className=" inline-flex items-center gap-4 mx-10">
               <IconStretching size={30} />
               <span className=" uppercase text-xl lg:text-3xl">
-                Physiotherapy & Mobility Assistance
+              A place to live with joy
               </span>
             </div>
-            <div className=" inline-flex items-center gap-4 mx-10">
+            {/* <div className=" inline-flex items-center gap-4 mx-10">
               <IconHearts size={30} />
               <span className=" uppercase text-xl lg:text-3xl">
                 Palliative & End-of-Life Care
@@ -42,7 +42,7 @@ function MarqueeSection() {
               <span className=" uppercase text-xl lg:text-3xl">
                 Nutritional & Wellness Programs
               </span>
-            </div>
+            </div> */}
           </Marquee>
         </div>
       </section>
