@@ -55,7 +55,7 @@ function NavbarDesign() {
                       About
                     </Link>
                   </li>
-                  <li className=" mx-1.5 relative">
+                  {/* <li className=" mx-1.5 relative">
                     <Link
                       // href="/doctors"
                       href="#"
@@ -72,7 +72,7 @@ function NavbarDesign() {
                     >
                       Services
                     </Link>
-                  </li>
+                  </li> */}
                   <li className=" mx-1.5 relative">
                     <Link
                       href="/contact"

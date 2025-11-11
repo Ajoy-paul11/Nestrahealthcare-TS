@@ -1,4 +1,4 @@
-import aboutImage from "../public/about-image.jpg";
+import aboutImage from "../public/about-image.webp";
 function AboutSection() {
   return (
     <section className=" w-full h-full p-4 md:p-8 lg:p-12 xl:p-16 2xl:p-20 my-12 lg:my-0">

@@ -3,9 +3,27 @@
 import { useEffect, useState } from "react";
 import LeadForm from "./leadForm";
 import heroBanner from "../public/hero-banner.jpg";
+import heroBanner2 from "../public/hero-banner-2.jpg";
+import heroBanner3 from "../public/hero-banner-3.jpg";
+
+
+const slides = [
+  heroBanner3,
+  heroBanner2,
+  heroBanner,
+]
 
 export default function Herosection() {
   const [openLeadForm, setOpenLeadForm] = useState(false);
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % slides.length);
+    }, 6000);
+
+    return () => clearInterval(interval);
+  }, [])
 
   const openModal = () => {
     setOpenLeadForm(true);
@@ -25,14 +43,15 @@ export default function Herosection() {
 
   return (
     <div
-      className=" relative w-full h-[90vh] flex flex-col justify-center items-center text-4xl font-bold"
+      className=" relative w-full h-[90vh] flex flex-col justify-center items-center text-4xl font-bold transition-all duration-1000"  
       style={{
-        backgroundImage: `url(${heroBanner.src})`,
+        backgroundImage: `url(${slides[currentIndex].src})`,
         backgroundSize: "cover",
-        backgroundPosition: "center",
+        backgroundPosition: "top center",
         backgroundRepeat: "no-repeat",
       }}
     >
+    
       <div className=" absolute inset-0 bg-[#063154]/40 w-full h-full"/>
       <div className="text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl drop-shadow-2xl text-[#F7F6F2] text-center">
         <h1
