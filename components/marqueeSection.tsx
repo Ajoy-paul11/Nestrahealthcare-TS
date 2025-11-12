@@ -16,33 +16,33 @@ function MarqueeSection() {
             <div className=" inline-flex items-center gap-4 mx-10">
               <IconHomeHeart size={30} />
               <span className=" uppercase text-xl lg:text-3xl">
-              Care that feels like home
-              </span>
-            </div>
-            <div className=" inline-flex items-center gap-4 mx-10">
-              <IconLivePhoto size={30} />
-              <span className=" uppercase text-xl lg:text-3xl">
-              Where dignity meets comfort
+                Care that feels like home
               </span>
             </div>
             <div className=" inline-flex items-center gap-4 mx-10">
               <IconStretching size={30} />
               <span className=" uppercase text-xl lg:text-3xl">
-              A place to live with joy
+                A place to live with joy
               </span>
             </div>
-            {/* <div className=" inline-flex items-center gap-4 mx-10">
+            <div className=" inline-flex items-center gap-4 mx-10">
+              <IconLivePhoto size={30} />
+              <span className=" uppercase text-xl lg:text-3xl">
+                Where dignity meets comfort
+              </span>
+            </div>
+            <div className=" inline-flex items-center gap-4 mx-10">
               <IconHearts size={30} />
               <span className=" uppercase text-xl lg:text-3xl">
-                Palliative & End-of-Life Care
+                A New Age of Senior Living
               </span>
             </div>
             <div className=" inline-flex items-center gap-4 mx-10">
               <IconCarambola size={30} />
               <span className=" uppercase text-xl lg:text-3xl">
-                Nutritional & Wellness Programs
+                Not Just Care, a True Community
               </span>
-            </div> */}
+            </div>
           </Marquee>
         </div>
       </section>

@@ -34,9 +34,7 @@ export default function AboutPage() {
                   professional.
                 </p>
                 <p>
-                  Our facility in Bangalore blends medical excellence with a
-                  homely atmosphere, ensuring residents feel cared for in every
-                  way.
+                Our center in Bangalore blends expert care with a homely environment, ensuring every guest feels engaged, respected, and supported throughout the day.
                 </p>
               </div>
             </div>
@@ -95,8 +93,7 @@ export default function AboutPage() {
                 Excellence in Care
               </h3>
               <p className="text-gray-700 leading-relaxed">
-                Experienced doctors and caregivers dedicated to well-being,
-                providing the highest standard of healthcare.
+              Experienced caregivers and wellness professionals dedicated to enriching every day — ensuring comfort, safety, and companionship for all.
               </p>
             </div>
           </div>
@@ -151,7 +148,7 @@ export default function AboutPage() {
             <div className="bg-white bg-opacity-10 backdrop-blur-sm rounded-2xl p-8 border border-white border-opacity-20">
               <h3 className=" text-lg lg:text-2xl font-bold mb-4 text-accent">Vision</h3>
               <p className="text-sm lg:text-lg leading-relaxed">
-                To be Bangalore's most trusted name in senior and disability
+                To be Bangalore's most trusted name in senior day
                 care.
               </p>
             </div>

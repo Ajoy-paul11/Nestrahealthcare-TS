@@ -4,19 +4,16 @@ function AboutSection() {
     <section className=" w-full h-full p-4 md:p-8 lg:p-12 xl:p-16 2xl:p-20 my-12 lg:my-0">
       <div className=" grid grid-cols-1 md:grid-cols-2 gap-x-0 gap-8 lg:gap-12 xl:gap-16 2xl:gap-20">
         <div className=" flex flex-col gap-8 lg:p-8 xl:p-12 2xl:p-16 ">
-          <h4 className=" text-lg lg:text-xl xl:text-2xl uppercase">
+          {/* <h4 className=" text-lg lg:text-xl xl:text-2xl uppercase">
             our introduction
-          </h4>
+          </h4> */}
           <h3 className=" text-[1.1rem] lg:text-[1.4rem] 2xl:text-[1.8rem] py-4">
             At{" "}
             <span className=" text-[#025F67] style-font text-[2rem] 2xl:text-[2.5rem]">
               {" "}
               Nestra Health Care
             </span>
-            , We believe care is more than medical attention — it’s empathy,
-            respect, and companionship. With a team of experienced doctors,
-            nurses, and caregivers, we ensure every resident feels valued,
-            supported, and safe.
+            , We believe care goes beyond assistance — it’s about empathy, respect, and genuine companionship. With our dedicated team of caregivers and support staff, we ensure every elder feels engaged, valued, and at home throughout the day.
           </h3>
           {/* <h3 className=" text-3xl lg:text-4xl xl:text-5xl font-semibold py-2">
             Generous Plots and Farm Lands
