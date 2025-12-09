@@ -12,7 +12,7 @@ function TopBanner() {
               </div>
               <div className=" text-xs lg:text-base">
                 <h3 className=" uppercase">emergency</h3>
-                <h6>+91 1234567890</h6>
+                <h6>+91 9008981100</h6>
               </div>
             </div>
           </div>
@@ -23,7 +23,7 @@ function TopBanner() {
               </div>
               <div className=" text-xs lg:text-base">
                 <h3 className=" uppercase">work hours</h3>
-                <h6>9:00 - 7:00 Everyday</h6>
+                <h6>9am to 6pm Everyday</h6>
               </div>
             </div>
           </div>

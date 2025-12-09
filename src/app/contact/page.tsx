@@ -96,10 +96,10 @@ export default function ContactPage() {
                       Phone
                     </h3>
                     <a
-                      href="tel:+91XXXXXXXXXX"
+                      href="tel:+919008981100"
                       className=" text-accent text-sm lg:text-lg"
                     >
-                      +91-XXXXXXXXXX
+                      +91-9008981100
                     </a>
                   </div>
                 </div>
