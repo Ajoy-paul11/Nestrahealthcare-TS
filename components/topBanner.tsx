@@ -12,7 +12,7 @@ function TopBanner() {
               </div>
               <div className=" text-xs lg:text-base">
                 <h3 className=" uppercase">emergency</h3>
-                <h6>+91 9008981100</h6>
+                <h6>+91 9902368800</h6>
               </div>
             </div>
           </div>
@@ -34,7 +34,8 @@ function TopBanner() {
               </div>
               <div className=" text-xs lg:text-base">
                 <h3 className=" uppercase">location</h3>
-                <h6>123,Main Street,Sub Cross,Bangalore</h6>
+                <h6> #1201, Shiv Enclave, 26th cross, 5th block, Aswathnagar,
+                HBR Layout</h6>
               </div>
             </div>
           </div>

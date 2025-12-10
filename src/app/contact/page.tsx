@@ -96,10 +96,10 @@ export default function ContactPage() {
                       Phone
                     </h3>
                     <a
-                      href="tel:+919008981100"
+                      href="tel:+919902368800"
                       className=" text-accent text-sm lg:text-lg"
                     >
-                      +91-9008981100
+                      +91-9902368800
                     </a>
                   </div>
                 </div>
@@ -130,9 +130,10 @@ export default function ContactPage() {
                       Location
                     </h3>
                     <p className=" text-accent text-sm lg:text-lg">
-                      Nestra Healthcare Center
+                      Nestra Health Care Private Limited
                       <br />
-                      Bangalore, Karnataka
+                      #1201, Shiv Enclave, 26th cross, 5th block, Aswathnagar,
+                      HBR Layout, Bengaluru 560043
                     </p>
                   </div>
                 </div>
@@ -263,7 +264,7 @@ export default function ContactPage() {
           <div className="bg-white rounded-3xl overflow-hidden shadow-2xl">
             <div className="aspect-w-16 aspect-h-9 h-96 md:h-[500px]">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d248849.886539092!2d77.49085452346034!3d12.953945614011695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1670c9b44e6d%3A0xf8dfc3e8517e4fe0!2sBengaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1234567890123!5m2!1sen!2sin"
+                src="https://www.google.com/maps/place/26th+Cross+Rd,+5th+Block,+Ashwath+Nagar,+HBR+Layout,+Bengaluru,+Karnataka/@13.0425668,77.6234196,1012m/data=!3m2!1e3!4b1!4m10!1m2!2m1!1s%231201,+Shiv+Enclave,+26th+cross,+5th+block,+Aswathnagar,+HBR+Layout,+Bengaluru+560043!3m6!1s0x3bae17698e8b90d3:0xfbad5810c22350a9!8m2!3d13.0425616!4d77.6282905!15sClUjMTIwMSwgU2hpdiBFbmNsYXZlLCAyNnRoIGNyb3NzLCA1dGggYmxvY2ssIEFzd2F0aG5hZ2FyLCBIQlIgTGF5b3V0LCBCZW5nYWx1cnUgNTYwMDQzkgEFcm91dGXgAQA!16s%2Fg%2F1ptyc2wjl?entry=ttu&g_ep=EgoyMDI1MTIwNy4wIKXMDSoKLDEwMDc5MjA2N0gBUAM%3D"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
@@ -286,7 +287,7 @@ export default function ContactPage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="tel:+91XXXXXXXXXX"
+              href="tel:+919902368800"
               className="inline-flex items-center justify-center space-x-2 bg-white hover:bg-[#2F9D94] text-[#2F9D94] hover:text-white font-bold text-lg px-8 py-4 rounded-full transition-all duration-300 shadow-lg hover:shadow-xl"
             >
               <IconSend size={24} />
