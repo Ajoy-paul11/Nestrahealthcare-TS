@@ -126,7 +126,7 @@ function NavbarDesign() {
                   About
                 </Link>
               </li>
-              <li className=" block lg:hidden py-2 px-5">
+              {/* <li className=" block lg:hidden py-2 px-5">
                 <Link
                   href="/doctors"
                   className=" relative text-base font-normal  m-0 rounded-none"
@@ -141,7 +141,7 @@ function NavbarDesign() {
                 >
                   Services
                 </Link>
-              </li>
+              </li> */}
               <li className=" block lg:hidden py-2 px-5">
                 <Link
                   href="/contact"

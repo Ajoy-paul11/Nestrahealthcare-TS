@@ -44,12 +44,12 @@ function Footer() {
               >
                 About
               </Link>
-              <Link href="#" className="hover:text-accent transition-colors">
+              {/* <Link href="#" className="hover:text-accent transition-colors">
                 Doctors
               </Link>
               <Link href="#" className="hover:text-accent transition-colors">
                 Services
-              </Link>
+              </Link> */}
               <Link
                 href="/contact"
                 className="hover:text-accent transition-colors"
@@ -87,10 +87,12 @@ function Footer() {
                   </Link>
                 </div>
                 <div className=" border border-white rounded-xl p-1">
+                  <Link href="https://www.linkedin.com/company/nestra-health-care/" target="_blank">
                   <IconBrandLinkedinFilled
                     size={24}
                     className=" hover:text-accent cursor-pointer"
                   />
+                  </Link>
                 </div>
               </div>
             </div>

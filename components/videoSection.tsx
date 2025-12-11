@@ -26,13 +26,13 @@ function VideoSection() {
   };
 
   return (
-    <div className="relative w-full h-[750px] overflow-hidden">
+    <div className="relative w-full h-[210px] lg:h-[750px] overflow-hidden">
       {/* Image Container */}
       <div className="relative w-full h-full">
         {slides.map((slide, index) => (
           <div
             key={index}
-            className={`absolute inset-0 transition-opacity duration-1000  ${
+            className={`absolute lg:inset-0 transition-opacity duration-1000  ${
               index === currentIndex ? "opacity-100" : "opacity-0"
             }`}
           > 
@@ -40,7 +40,7 @@ function VideoSection() {
             <img
               src={slide.src}
               alt={`Slide ${index + 1}`}
-              className="w-full h-full object-contain"
+              className="w-full h-full object-cover lg:object-contain"
             />
           </div>
         ))}
@@ -71,7 +71,7 @@ function VideoSection() {
           <button
             key={index}
             onClick={() => goToSlide(index)}
-            className={`w-3 h-3 rounded-full transition-all duration-300 ${
+            className={` w-1.5 h-1.5 lg:w-3 lg:h-3 rounded-full transition-all duration-300 ${
               index === currentIndex
                 ? "bg-blue-100 scale-125"
                 : "bg-blue-500 hover:bg-blue-200 cursor-pointer"

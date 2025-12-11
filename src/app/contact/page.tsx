@@ -264,14 +264,14 @@ export default function ContactPage() {
           <div className="bg-white rounded-3xl overflow-hidden shadow-2xl">
             <div className="aspect-w-16 aspect-h-9 h-96 md:h-[500px]">
               <iframe
-                src="https://www.google.com/maps/place/26th+Cross+Rd,+5th+Block,+Ashwath+Nagar,+HBR+Layout,+Bengaluru,+Karnataka/@13.0425668,77.6234196,1012m/data=!3m2!1e3!4b1!4m10!1m2!2m1!1s%231201,+Shiv+Enclave,+26th+cross,+5th+block,+Aswathnagar,+HBR+Layout,+Bengaluru+560043!3m6!1s0x3bae17698e8b90d3:0xfbad5810c22350a9!8m2!3d13.0425616!4d77.6282905!15sClUjMTIwMSwgU2hpdiBFbmNsYXZlLCAyNnRoIGNyb3NzLCA1dGggYmxvY2ssIEFzd2F0aG5hZ2FyLCBIQlIgTGF5b3V0LCBCZW5nYWx1cnUgNTYwMDQzkgEFcm91dGXgAQA!16s%2Fg%2F1ptyc2wjl?entry=ttu&g_ep=EgoyMDI1MTIwNy4wIKXMDSoKLDEwMDc5MjA2N0gBUAM%3D"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4408.180528575764!2d77.62571557555223!3d13.042566813317434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae17698e8b90d3%3A0xfbad5810c22350a9!2s26th%20Cross%20Rd%2C%20Ashwath%20Nagar%2C%20HBR%20Layout%2C%20Bengaluru%2C%20Karnataka!5e1!3m2!1sen!2sin!4v1765427912524!5m2!1sen!2sin"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-              />
+              ></iframe>
             </div>
           </div>
         </div>

@@ -72,7 +72,7 @@ export default function Herosection() {
         onClick={openModal}
         className="z-10 mt-8 bg-[#2F9D94] text-[#F7F6F2] px-6 py-3 rounded-full text-lg font-semibold cursor-pointer transition duration-300"
       >
-        Meet Our Doctors
+        Send Us A Message
       </button>
 
       {/* Modal overlay */}
