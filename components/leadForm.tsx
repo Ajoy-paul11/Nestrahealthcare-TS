@@ -59,21 +59,21 @@ function LeadForm({ setOpenLeadForm }: LeadFormProps) {
   };
 
   return (
-    <section className=" w-full h-screen flex justify-center lg:justify-end items-center backdrop-blur-xs z-100">
-      <div className=" blue-shade-bg relative  border-1 rounded-3xl w-[80vw] md:w-[40vw] lg:w-[30vw] xl:w-[25vw] 2xl:w-[20vw] p-4 m-2 md:m-6 lg:m-12 xl:m-16 pt-16">
-        <div className=" green-shade-bg p-2 rounded-2xl absolute right-2 top-2 cursor-pointer">
+    <section className=" relative w-full h-screen flex justify-end items-center backdrop-blur-xs z-100">
+      <div className=" blue-shade-bg absolute bottom-1 border-1 rounded-3xl w-[70vw] md:w-[40vw] lg:w-[30vw] xl:w-[20vw] p-4 m-2 md:m-6 pt-12">
+        <div className=" green-shade-bg p-1 rounded-2xl absolute right-2 top-2 cursor-pointer">
           <RxCross1
             className="h-4 w-4 text-white float-right cursor-pointer"
             onClick={() => setOpenLeadForm(false)}
           />
         </div>
         <form onSubmit={handleSubmit(onSubmit)} className="">
-          <div className="grid grid-cols-1 gap-4 xl:gap-8 text-sm lg:text-base xl:text-lg">
+          <div className="grid grid-cols-1 gap-3 text-sm lg:text-base">
             <input
               type="text"
               placeholder="Your Name"
               required
-              className=" bg-[#F7f6F2] p-3 md:p-4  rounded-2xl outline-none "
+              className=" bg-[#F7f6F2] p-1.5 md:p-2  rounded-2xl outline-none "
               {...register("name", {
                 required: "Name is required",
               })}
@@ -83,7 +83,7 @@ function LeadForm({ setOpenLeadForm }: LeadFormProps) {
               type="email"
               placeholder="Your Email"
               required
-              className=" bg-[#F7f6F2] p-3 md:p-4  rounded-2xl outline-none "
+              className=" bg-[#F7f6F2] p-1.5 md:p-2 rounded-2xl outline-none "
               {...register("email", {
                 required: "Email is required",
                 pattern: {
@@ -96,7 +96,7 @@ function LeadForm({ setOpenLeadForm }: LeadFormProps) {
               type="tel"
               placeholder=" Your Mobile Number"
               required
-              className=" bg-[#F7f6F2] p-3 md:p-4  rounded-2xl outline-none "
+              className=" bg-[#F7f6F2] p-1.5 md:p-2 rounded-2xl outline-none "
               {...register("phone", {
                 required: "Phone number is required",
                 pattern: {
@@ -107,9 +107,9 @@ function LeadForm({ setOpenLeadForm }: LeadFormProps) {
             />
             <textarea
               placeholder="Your Message"
-              rows={3}
+              rows={2}
               required
-              className=" bg-[#F7f6F2] p-3 md:p-4  rounded-2xl outline-none"
+              className=" bg-[#F7f6F2] p-1.5 md:p-2 rounded-2xl outline-none"
               {...register("message", {
                 required: "Message is required",
               })}
@@ -117,10 +117,10 @@ function LeadForm({ setOpenLeadForm }: LeadFormProps) {
             <button
               type="submit"
               disabled={isSubmitting}
-              className="w-fit mx-auto bg-[#2F9D94] text-white font-semibold px-4 py-2 rounded-4xl flex items-center justify-center cursor-pointer text-sm md:text-base"
+              className="w-fit mx-auto bg-[#2F9D94] text-white font-semibold px-3 py-1.5 rounded-4xl flex items-center justify-center cursor-pointer text-xs md:text-sm"
             >
               {isSubmitting ? "Sending..." : "Send Message"}
-              <IconSend className="ml-2 h-5 w-5" />
+              <IconSend className="ml-2 h-4 w-4" />
             </button>
           </div>
         </form>

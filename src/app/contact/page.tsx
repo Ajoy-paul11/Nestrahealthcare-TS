@@ -10,6 +10,7 @@ import {
 import { useForm } from "react-hook-form";
 import type { SubmitHandler } from "react-hook-form";
 import toast from "react-hot-toast";
+import Link from "next/link";
 
 interface FormData {
   name: string;
@@ -29,7 +30,6 @@ export default function ContactPage() {
   const onSubmit: SubmitHandler<FormData> = async (data) => {
     try {
       setIsSubmitting(true);
-      console.log(data);
 
       const formBody = new URLSearchParams(data as any).toString();
 
@@ -95,12 +95,12 @@ export default function ContactPage() {
                     <h3 className="font-bold text-highlight text-sm lg:text-lg mb-2">
                       Phone
                     </h3>
-                    <a
+                    <Link
                       href="tel:+919902368800"
                       className=" text-accent text-sm lg:text-lg"
                     >
                       +91-9902368800
-                    </a>
+                    </Link>
                   </div>
                 </div>
 
@@ -112,12 +112,12 @@ export default function ContactPage() {
                     <h3 className="font-bold text-highlight text-sm lg:text-lg mb-2">
                       Email
                     </h3>
-                    <a
+                    <Link
                       href="mailto:info@nestrahealthcare.com"
                       className=" text-accent text-sm lg:text-lg"
                     >
                       info@nestrahealthcare.com
-                    </a>
+                    </Link>
                   </div>
                 </div>
 

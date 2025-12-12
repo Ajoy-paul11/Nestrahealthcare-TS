@@ -25,21 +25,23 @@ export default function Herosection() {
     return () => clearInterval(interval);
   }, [])
 
+
   const openModal = () => {
     setOpenLeadForm(true);
   };
+  // Auto pop-up after 3 seconds form logic
 
-  const closeModal = () => {
-    setOpenLeadForm(false);
-  };
+  // const closeModal = () => {
+  //   setOpenLeadForm(false);
+  // };
 
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setOpenLeadForm(true);
-    }, 3000);
+  // useEffect(() => {
+  //   const timer = setTimeout(() => {
+  //     setOpenLeadForm(true);
+  //   }, 3000);
 
-    return () => clearTimeout(timer);
-  }, []);
+  //   return () => clearTimeout(timer);
+  // }, []);
 
   return (
     <div
@@ -77,7 +79,7 @@ export default function Herosection() {
 
       {/* Modal overlay */}
       {openLeadForm && (
-        <div className="fixed inset-0 z-50">
+        <div className="fixed inset-0 z-100">
           <LeadForm setOpenLeadForm={setOpenLeadForm} />
         </div>
       )}
