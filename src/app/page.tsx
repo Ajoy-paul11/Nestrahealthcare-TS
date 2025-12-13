@@ -9,6 +9,7 @@ import DoctorPreview from "../../components/doctorPreview";
 import { IconMessage } from "@tabler/icons-react";
 import { useState } from "react";
 import LeadForm from "../../components/leadForm";
+import ServicePreview from "../../components/servicePreview";
 
 export default function Home() {
   const [openForm, setOpenForm] = useState(false);
@@ -19,6 +20,7 @@ export default function Home() {
   return (
     <section>
       <Herosection />
+      <ServicePreview />
       <AboutSection />
       <MarqueeSection />
       <VideoSection />
