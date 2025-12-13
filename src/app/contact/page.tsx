@@ -120,23 +120,28 @@ export default function ContactPage() {
                     </Link>
                   </div>
                 </div>
-
-                <div className="flex items-start space-x-4 bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300">
-                  <div className="w-12 h-12 green-shade-bg rounded-full flex items-center justify-center flex-shrink-0">
-                    <IconMapPin className="text-white" size={24} />
+                <Link
+                  href="https://maps.app.goo.gl/cYkpL1zYWZGENy249"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <div className="flex items-start space-x-4 bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300">
+                    <div className="w-12 h-12 green-shade-bg rounded-full flex items-center justify-center flex-shrink-0">
+                      <IconMapPin className="text-white" size={24} />
+                    </div>
+                    <div>
+                      <h3 className="font-bold text-highlight text-sm lg:text-lg mb-2">
+                        Location
+                      </h3>
+                      <p className=" text-accent text-sm lg:text-lg">
+                        Nestra Health Care Private Limited
+                        <br />
+                        #1201, Shiv Enclave, 26th cross, 5th block, Aswathnagar,
+                        HBR Layout, Bengaluru 560043
+                      </p>
+                    </div>
                   </div>
-                  <div>
-                    <h3 className="font-bold text-highlight text-sm lg:text-lg mb-2">
-                      Location
-                    </h3>
-                    <p className=" text-accent text-sm lg:text-lg">
-                      Nestra Health Care Private Limited
-                      <br />
-                      #1201, Shiv Enclave, 26th cross, 5th block, Aswathnagar,
-                      HBR Layout, Bengaluru 560043
-                    </p>
-                  </div>
-                </div>
+                </Link>
               </div>
             </div>
 
@@ -264,7 +269,7 @@ export default function ContactPage() {
           <div className="bg-white rounded-3xl overflow-hidden shadow-2xl">
             <div className="aspect-w-16 aspect-h-9 h-96 md:h-[500px]">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4408.180528575764!2d77.62571557555223!3d13.042566813317434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae17698e8b90d3%3A0xfbad5810c22350a9!2s26th%20Cross%20Rd%2C%20Ashwath%20Nagar%2C%20HBR%20Layout%2C%20Bengaluru%2C%20Karnataka!5e1!3m2!1sen!2sin!4v1765427912524!5m2!1sen!2sin"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4413.281017308393!2d77.6281413!3d13.0403567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae170010a7deeb%3A0x7e7c011b0ff78845!2sNestra%20Healthcare!5e1!3m2!1sen!2sin!4v1765603542661!5m2!1sen!2sin"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
