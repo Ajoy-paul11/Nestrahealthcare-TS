@@ -121,7 +121,7 @@ export default function ContactPage() {
                   </div>
                 </div>
                 <Link
-                  href="https://maps.app.goo.gl/cYkpL1zYWZGENy249"
+                  href="https://maps.app.goo.gl/p78Hdj7wVSgkEHFR6"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -269,7 +269,7 @@ export default function ContactPage() {
           <div className="bg-white rounded-3xl overflow-hidden shadow-2xl">
             <div className="aspect-w-16 aspect-h-9 h-96 md:h-[500px]">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4413.281017308393!2d77.6281413!3d13.0403567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae170010a7deeb%3A0x7e7c011b0ff78845!2sNestra%20Healthcare!5e1!3m2!1sen!2sin!4v1765603542661!5m2!1sen!2sin"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4413.274159484599!2d77.6281769!3d13.040741099999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1713839491a1%3A0x50ca1d716263feb1!2sNestra%20Health%20Care!5e1!3m2!1sen!2sin!4v1767244743309!5m2!1sen!2sin"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}

@@ -37,7 +37,7 @@ function TopBanner() {
           </div> */}
           <div className=" flex justify-center items-center">
             <Link
-              href="https://maps.app.goo.gl/cYkpL1zYWZGENy249"
+              href="https://maps.app.goo.gl/p78Hdj7wVSgkEHFR6"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -49,7 +49,7 @@ function TopBanner() {
                   <h3 className=" uppercase">location</h3>
                   <h6>
                     {" "}
-                    #1201, Shiv Enclave, 26th cross, 5th block, Aswathnagar, HBR
+                    Shiv Enclave, 1201, 25th cross Rd, 5th block, Ashwath Nagar, HBR
                     Layout
                   </h6>
                 </div>

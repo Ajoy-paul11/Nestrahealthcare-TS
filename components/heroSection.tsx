@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import LeadForm from "./leadForm";
 import heroBanner from "../public/hero-banner.jpg";
-import heroBanner2 from "../public/hero-banner-2.jpg";
+import heroBanner2 from "../public/group-1.jpg";
 import heroBanner3 from "../public/hero-banner-3.jpg";
 
 
