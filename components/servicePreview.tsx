@@ -21,6 +21,7 @@ const doctorDetails = [
   {
     name: "Assisted Living",
     icon: IconHomeHeart,
+    subpage: "/assisted-living"
   },
   {
     name: "Day care services",
@@ -75,7 +76,8 @@ function ServicePreview() {
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 md:gap-12 px-4 ">
         {doctorDetails.map((doctor, index) => (
-          <div
+          <Link
+            href={doctor.subpage ? doctor.subpage : "/"}
             key={index}
             className=" flex flex-col md:flex-row items-center gap-6 p-6 bg-[#2F9D94] hover:bg-[#063154] transition-colors duration-600 ease-in-out rounded-2xl group"
           >
@@ -92,7 +94,7 @@ function ServicePreview() {
                 <IconArrowRight size={36} stroke={1.5} />
               </div>
             </div>
-          </div>
+          </Link>
         ))}
       </div>
     </div>
