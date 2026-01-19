@@ -9,6 +9,8 @@ import {
   IconCheck,
 } from "@tabler/icons-react";
 import Link from "next/link";
+import image1 from "../../../public/assisted-living.jpg";
+import image2 from "../../../public/assisted-living2.png";
 
 export default function AssistedLivingPage() {
   const features = [
@@ -72,8 +74,16 @@ export default function AssistedLivingPage() {
       </section>
 
       {/* Introduction Section */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
-        <div className="max-w-4xl mx-auto text-center">
+      <section className=" relative flex flex-col xl:flex-row items-center gap-6 bg-white">
+        <div className=" relative w-full xl:w-1/2 overflow-hidden ">
+          <img
+            src={image1.src}
+            alt="Assisted Living"
+            className="w-full h-[270px] lg:h-[450px] object-cover bg-center "
+          />
+          <div className="hidden xl:block absolute inset-0 from-80% from-transparent to-100% to-white bg-gradient-to-r"></div>
+        </div>
+        <div className="max-w-4xl mx-auto text-center px-2 md:px-6">
           <h2 className="text-2xl lg:text-4xl font-bold text-highlight mb-6">
             Introduction
           </h2>
@@ -87,75 +97,7 @@ export default function AssistedLivingPage() {
         </div>
       </section>
 
-      {/* What is Assisted Living Section */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
-        <div className="max-w-6xl mx-auto">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div>
-              <h2 className="text-2xl lg:text-4xl font-bold text-highlight mb-6">
-                What is Assisted Living?
-              </h2>
-              <div className="space-y-4 text-sm lg:text-lg text-gray-700 leading-relaxed">
-                <p>
-                  Assisted Living is a supportive care solution for seniors who
-                  require help with select daily activities while continuing to
-                  lead an active and self-directed life. At Nestra, care is
-                  personalized, flexible, and respectful - providing just the
-                  right level of assistance, without compromising autonomy or
-                  self-worth.
-                </p>
-                <p>
-                  Our Bangalore-based healthcare center blends professional
-                  caregiving with a homely atmosphere, ensuring every resident
-                  feels secure, cared for, and truly at home.
-                </p>
-              </div>
-            </div>
-            <div className="relative">
-              <div className="bg-gradient-to-br from-[#025F67] to-[#2F9D94] rounded-2xl p-8 shadow-2xl">
-                <div className="space-y-4">
-                  <div className="flex items-start space-x-3">
-                    <IconCheck
-                      className="text-white mt-1 flex-shrink-0"
-                      size={24}
-                    />
-                    <p className="text-white text-sm lg:text-base">
-                      Independence with support
-                    </p>
-                  </div>
-                  <div className="flex items-start space-x-3">
-                    <IconCheck
-                      className="text-white mt-1 flex-shrink-0"
-                      size={24}
-                    />
-                    <p className="text-white text-sm lg:text-base">
-                      Professional yet homely care
-                    </p>
-                  </div>
-                  <div className="flex items-start space-x-3">
-                    <IconCheck
-                      className="text-white mt-1 flex-shrink-0"
-                      size={24}
-                    />
-                    <p className="text-white text-sm lg:text-base">
-                      Dignity and respect always
-                    </p>
-                  </div>
-                  <div className="flex items-start space-x-3">
-                    <IconCheck
-                      className="text-white mt-1 flex-shrink-0"
-                      size={24}
-                    />
-                    <p className="text-white text-sm lg:text-base">
-                      Flexible, personalized support
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      
 
       {/* Key Features Section */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
@@ -178,11 +120,10 @@ export default function AssistedLivingPage() {
                   className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-100"
                 >
                   <div className=" flex items-center justify-center gap-4 md:gap-6 ">
-                    <div className="flex-shrink-0"> 
-
-                    <div className="w-10 h-10 md:w-16 md:h-16 bg-[#d75fa4] rounded-full flex items-center justify-center mb-6">
-                    <Icon className="text-white w-5 h-5 md:w-8 md:h-8" />
-                    </div>
+                    <div className="flex-shrink-0">
+                      <div className="w-10 h-10 md:w-16 md:h-16 bg-[#d75fa4] rounded-full flex items-center justify-center mb-6">
+                        <Icon className="text-white w-5 h-5 md:w-8 md:h-8" />
+                      </div>
                     </div>
                     <h3 className="text-lg lg:text-xl font-bold text-[#d75fa4] mb-4">
                       {feature.title}
@@ -195,6 +136,37 @@ export default function AssistedLivingPage() {
               );
             })}
           </div>
+        </div>
+      </section>
+
+      {/* What is Assisted Living Section */}
+      <section className=" relative flex flex-col xl:flex-row items-center gap-6 bg-white">
+        <div className="max-w-4xl mx-auto text-center px-2 md:px-6">
+          <h2 className="text-2xl lg:text-4xl font-bold text-highlight mb-6">
+            What is Assisted Living?
+          </h2>
+          <div className="space-y-4 text-sm lg:text-lg text-gray-700 leading-relaxed">
+            <p>
+              Assisted Living is a supportive care solution for seniors who
+              require help with select daily activities while continuing to lead
+              an active and self-directed life. At Nestra, care is personalized,
+              flexible, and respectful - providing just the right level of
+              assistance, without compromising autonomy or self-worth.
+            </p>
+            <p>
+              Our Bangalore-based healthcare center blends professional
+              caregiving with a homely atmosphere, ensuring every resident feels
+              secure, cared for, and truly at home.
+            </p>
+          </div>
+        </div>
+        <div className=" relative w-full xl:w-1/2 overflow-hidden ">
+          <img
+            src={image2.src}
+            alt="Assisted Living"
+            className="w-full h-[300px] lg:h-[500px] object-cover bg-center "
+          />
+          <div className="hidden xl:block absolute inset-0 from-0% from-white to-25% to-transparent bg-gradient-to-r"></div>
         </div>
       </section>
 
