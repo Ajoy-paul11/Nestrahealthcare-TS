@@ -9,8 +9,8 @@ import Link from "next/link";
 function TopBanner() {
   return (
     <section className=" w-full h-full green-shade-bg text-white">
-      <div className=" w-full h-full py-4 lg:py-6 px-3 lg:px-8 flex justify-center lg:justify-end">
-        <div className=" flex flex-wrap items-center gap-4 lg:gap-8">
+      <div className=" w-full h-full py-4 lg:py-6 px-0.5 lg:px-8 flex justify-center lg:justify-end">
+        <div className=" flex justify-between items-center gap-4 lg:gap-8">
           <div className=" flex justify-center items-center">
             <div className="flex justify-center items-center gap-3 lg:gap-4">
               <div>
@@ -45,11 +45,11 @@ function TopBanner() {
                 <div>
                   <IconMapPin size={30} />
                 </div>
-                <div className=" text-xs lg:text-base">
+                <div className=" text-[10px] lg:text-base">
                   <h3 className=" uppercase">location</h3>
                   <h6>
                     {" "}
-                    Shiv Enclave, 1201, 25th cross Rd, 5th block, Ashwath Nagar, HBR
+                    Shiv Enclave, 1201, 25th cross Rd, <br/> 5th block, Ashwath Nagar, HBR
                     Layout
                   </h6>
                 </div>
