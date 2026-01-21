@@ -24,7 +24,7 @@ const doctorDetails = [
     subpage: "/assisted-living"
   },
   {
-    name: "Day care services",
+    name: "Day Care Services",
     icon: IconSun,
   },
   {
@@ -48,7 +48,7 @@ const doctorDetails = [
     icon: IconRecharging
   },
   {
-    name: "Multi speciality clinic",
+    name: "Multi Speciality Clinic",
     icon: IconBuildingHospital
   },
   {
