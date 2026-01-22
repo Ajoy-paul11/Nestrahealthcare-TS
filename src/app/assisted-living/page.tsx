@@ -75,7 +75,7 @@ export default function AssistedLivingPage() {
 
       {/* Introduction Section */}
       <section className=" relative flex flex-col xl:flex-row items-center gap-6 bg-white">
-        <div className=" relative w-full xl:w-1/2 overflow-hidden ">
+        <div className=" relative w-full overflow-hidden ">
           <img
             src={image1.src}
             alt="Assisted Living"
@@ -83,7 +83,7 @@ export default function AssistedLivingPage() {
           />
           <div className="hidden xl:block absolute inset-0 from-80% from-transparent to-100% to-white bg-gradient-to-r"></div>
         </div>
-        <div className="max-w-4xl mx-auto text-center px-2 md:px-6">
+        <div className="max-w-1/2 mx-auto text-center px-2 md:px-6">
           <h2 className="text-2xl lg:text-4xl font-bold text-highlight mb-6">
             Introduction
           </h2>
@@ -141,7 +141,7 @@ export default function AssistedLivingPage() {
 
       {/* What is Assisted Living Section */}
       <section className=" relative flex flex-col xl:flex-row items-center gap-6 bg-white">
-        <div className="max-w-4xl mx-auto text-center px-2 md:px-6">
+        <div className="max-w-1/2 mx-auto text-center px-2 md:px-6">
           <h2 className="text-2xl lg:text-4xl font-bold text-highlight mb-6">
             What is Assisted Living?
           </h2>
@@ -160,7 +160,7 @@ export default function AssistedLivingPage() {
             </p>
           </div>
         </div>
-        <div className=" relative w-full xl:w-1/2 overflow-hidden ">
+        <div className=" relative w-full overflow-hidden ">
           <img
             src={image2.src}
             alt="Assisted Living"
