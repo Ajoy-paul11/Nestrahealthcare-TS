@@ -157,7 +157,7 @@ export default function GalleryPage() {
               e.stopPropagation();
               navigateLightbox("prev");
             }}
-            className="absolute left-4 text-white hover:text-gray-300 transition-colors z-10"
+            className="absolute left-0.5 md:left-4 text-white hover:text-gray-300 transition-colors z-10"
           >
             <IconChevronLeft size={48} />
           </button>
@@ -167,7 +167,7 @@ export default function GalleryPage() {
               e.stopPropagation();
               navigateLightbox("next");
             }}
-            className="absolute right-4 text-white hover:text-gray-300 transition-colors z-10"
+            className="absolute right-0.5 md:right-4 text-white hover:text-gray-300 transition-colors z-10"
           >
             <IconChevronRight size={48} />
           </button>

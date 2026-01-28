@@ -44,6 +44,12 @@ function Footer() {
               >
                 About
               </Link>
+              <Link
+                href="/gallery"
+                className="hover:text-accent transition-colors"
+              >
+                Gallery
+              </Link>
               {/* <Link href="#" className="hover:text-accent transition-colors">
                 Doctors
               </Link>
