@@ -55,14 +55,14 @@ function NavbarDesign() {
                       About
                     </Link>
                   </li>
-                  <li className=" mx-1.5 relative">
+                  {/* <li className=" mx-1.5 relative">
                     <Link
                       href="/gallery"
                       className=" text-base py-3 px-2.5 hover:text-[#063154] relative border-b-2 border-transparent hover:border-[#063154] transition-colors duration-300"
                     >
                       Gallery
                     </Link>
-                  </li>
+                  </li> */}
                   {/* <li className=" mx-1.5 relative">
                     <Link
                       // href="/doctors"
@@ -134,14 +134,14 @@ function NavbarDesign() {
                   About
                 </Link>
               </li>
-              <li onClick={handleNavMenu} className=" block lg:hidden py-2 px-5">
+              {/* <li onClick={handleNavMenu} className=" block lg:hidden py-2 px-5">
                 <Link
                   href="/gallery"
                   className=" relative text-base font-normal  m-0 rounded-none"
                 >
                   Gallery
                 </Link>
-              </li>
+              </li> */}
               {/* <li className=" block lg:hidden py-2 px-5">
                 <Link
                   href="/doctors"

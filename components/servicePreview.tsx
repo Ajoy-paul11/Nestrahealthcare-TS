@@ -37,7 +37,8 @@ const doctorDetails = [
   },
   {
     name: "Mind & Memory Care",
-    icon: IconBrain
+    icon: IconBrain,
+    subpage: "/mind-and-memory-care"
   },
   {
     name: "Palliative Care",
