@@ -80,14 +80,14 @@ function ServicePreview() {
           <Link
             href={doctor.subpage ? doctor.subpage : "/"}
             key={index}
-            className=" flex flex-col md:flex-row items-center gap-6 p-6 bg-[#2F9D94] hover:bg-[#063154] transition-colors duration-600 ease-in-out rounded-2xl group"
+            className=" flex flex-col md:flex-row items-center gap-6 p-4 lg:p-6 bg-[#2F9D94] hover:bg-[#063154] transition-colors duration-600 ease-in-out rounded-2xl group"
           >
             <div className=" flex justify-between items-center flex-1">
               <div className="text-[#063154] group-hover:text-[#F7F6F2] transition-colors duration-600 hidden group-hover:block">
                 <doctor.icon size={36} stroke={1.5} />
               </div>
               <div>
-                <h3 className=" text-lg lg:text-xl 2xl:text-2xl mb-2 text-[#F7F6F2] transition-colors duration-600">
+                <h3 className=" text-xl 2xl:text-2xl mb-2 text-[#F7F6F2] transition-colors duration-600">
                   {doctor.name}
                 </h3>
               </div>
