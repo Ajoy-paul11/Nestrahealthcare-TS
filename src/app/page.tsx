@@ -10,6 +10,8 @@ import { IconClipboardText } from "@tabler/icons-react";
 import { useState } from "react";
 import LeadForm from "../../components/leadForm";
 import ServicePreview from "../../components/servicePreview";
+import DoctorProfile from "../../components/doctorProfile";
+import doctor1 from "../../public/doctor1.jpeg";
 
 export default function Home() {
   const [openForm, setOpenForm] = useState(false);
@@ -23,6 +25,7 @@ export default function Home() {
       <ServicePreview />
       <AboutSection />
       <MarqueeSection />
+      <DoctorProfile imageSrc={doctor1.src}/>
       <VideoSection />
       {/* <DoctorPreview /> */}
       {/* <ReviewsCarousel /> */}
