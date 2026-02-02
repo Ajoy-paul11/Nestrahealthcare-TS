@@ -13,6 +13,9 @@ import toast from "react-hot-toast";
 import Link from "next/link";
 
 interface FormData {
+  access_key: string;
+  subject: string;
+  from_name: string;
   name: string;
   email: string;
   phone: string;
@@ -24,22 +27,26 @@ export default function ContactPage() {
 
   const [isSubmitting, setIsSubmitting] = useState<boolean>(false);
 
-  const sheetAPI =
-    "https://script.google.com/macros/s/AKfycbzGCI2uo5A8LEtpDJMXO4JuEYQwyigVYUpV1tlaYshRx1GrXIypukJDhUFTHpFw-oQbDQ/exec";
+  // const sheetAPI =
+  //   "https://script.google.com/macros/s/AKfycbzGCI2uo5A8LEtpDJMXO4JuEYQwyigVYUpV1tlaYshRx1GrXIypukJDhUFTHpFw-oQbDQ/exec";
 
   const onSubmit: SubmitHandler<FormData> = async (data) => {
     try {
       setIsSubmitting(true);
 
-      const formBody = new URLSearchParams(data as any).toString();
+      // const formBody = new URLSearchParams(data as any).toString();
 
-      await fetch(sheetAPI, {
+      await fetch("https://api.web3forms.com/submit", {
+        // mode: "no-cors",
+        // headers: {
+          //   "Content-Type": "application/x-www-form-urlencoded",
+          // },
         method: "POST",
-        mode: "no-cors",
         headers: {
-          "Content-Type": "application/x-www-form-urlencoded",
+          "Content-Type": "application/json",
+          Accept: "application/json",
         },
-        body: formBody,
+        body: JSON.stringify(data),
       });
 
       reset();
@@ -165,6 +172,17 @@ export default function ContactPage() {
                   </div>
                 ) : (
                   <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
+                    <input
+                      type="hidden"
+                      value={process.env.NEXT_PUBLIC_FORM_API_KEY}
+                      {...register("access_key")}
+                    />
+                    <input type="hidden" {...register("subject")} />
+                    <input
+                      type="hidden"
+                      value="Nestra Health Care Website"
+                      {...register("from_name")}
+                    />
                     <div>
                       <label
                         htmlFor="name"

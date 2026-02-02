@@ -9,6 +9,9 @@ import { RxCross1 } from "react-icons/rx";
 import { IconSend } from "@tabler/icons-react";
 
 interface FormData {
+  access_key: string;
+  subject: string;
+  from_name: string;
   name: string;
   email: string;
   phone: string;
@@ -22,23 +25,27 @@ function LeadForm({ setOpenLeadForm }: LeadFormProps) {
 
   const [isSubmitting, setIsSubmitting] = useState<boolean>(false);
 
-  const sheetAPI =
-    "https://script.google.com/macros/s/AKfycbzGCI2uo5A8LEtpDJMXO4JuEYQwyigVYUpV1tlaYshRx1GrXIypukJDhUFTHpFw-oQbDQ/exec";
+  // const sheetAPI =
+  //   "https://script.google.com/macros/s/AKfycbzGCI2uo5A8LEtpDJMXO4JuEYQwyigVYUpV1tlaYshRx1GrXIypukJDhUFTHpFw-oQbDQ/exec";
 
   const onSubmit: SubmitHandler<FormData> = async (data) => {
     try {
       setIsSubmitting(true);
       console.log(data);
 
-      const formBody = new URLSearchParams(data as any).toString();
+      // const formBody = new URLSearchParams(data as any).toString();
 
-      await fetch(sheetAPI, {
+      await fetch("https://api.web3forms.com/submit", {
+        // mode: "no-cors",
+        // headers: {
+        //   "Content-Type": "application/x-www-form-urlencoded",
+        // },
         method: "POST",
-        mode: "no-cors",
         headers: {
-          "Content-Type": "application/x-www-form-urlencoded",
+          "Content-Type": "application/json",
+          Accept: "application/json",
         },
-        body: formBody,
+        body: JSON.stringify(data),
       });
 
       reset();
@@ -68,6 +75,17 @@ function LeadForm({ setOpenLeadForm }: LeadFormProps) {
           />
         </div>
         <form onSubmit={handleSubmit(onSubmit)} className="">
+          <input
+            type="hidden"
+            value={process.env.NEXT_PUBLIC_FORM_API_KEY}
+            {...register("access_key")}
+          />
+          <input type="hidden" {...register("subject")} />
+          <input
+            type="hidden"
+            value="Nestra Health Care Website"
+            {...register("from_name")}
+          />
           <div className="grid grid-cols-1 gap-3 text-sm lg:text-base">
             <input
               type="text"
