@@ -2,24 +2,37 @@
 
 import { IconX, IconChevronLeft, IconChevronRight } from "@tabler/icons-react";
 import { useState } from "react";
+import img1 from "../../../public/gallery1.jpg"
+import img2 from "../../../public/gallery4.jpg"
+import img3 from "../../../public/gallery7.jpg"
+import img4 from "../../../public/gallery13.jpg"
+import img5 from "../../../public/gallery15.jpg"
+import img6 from "../../../public/gallery17.jpg"
+import img7 from "../../../public/gallery25.jpg"
+import img8 from "../../../public/gallery29.jpg"
+import img9 from "../../../public/gallery32.jpg"
+import img10 from "../../../public/gallery34.jpg"
+import img11 from "../../../public/gallery37.jpg"
+import img12 from "../../../public/gallery38.jpg"
+
 
 export default function GalleryPage() {
   const [selectedImage, setSelectedImage] = useState<number | null>(null);
 
   // Placeholder images - replace with your actual image imports
   const galleryImages = [
-    { id: 1, src: "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=800", alt: "Facility entrance", size: "large" },
-    { id: 2, src: "https://images.unsplash.com/photo-1631217868264-e5b90bb7e133?w=800", alt: "Common area", size: "standard" },
-    { id: 3, src: "https://images.unsplash.com/photo-1666214280557-f1b5022eb634?w=600", alt: "Activity room", size: "portrait" },
-    { id: 4, src: "https://images.unsplash.com/photo-1584515933487-779824d29309?w=800", alt: "Dining area", size: "standard" },
-    { id: 5, src: "https://images.unsplash.com/photo-1538108149393-fbbd81895907?w=800", alt: "Garden view", size: "standard" },
-    { id: 6, src: "https://images.unsplash.com/photo-1584820927498-cfe5211fd8bf?w=800", alt: "Therapy room", size: "standard" },
-    { id: 7, src: "https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?w=800", alt: "Reading corner", size: "standard" },
-    { id: 8, src: "https://images.unsplash.com/photo-1582719471384-894fbb16e074?w=800", alt: "Recreation area", size: "standard" },
-    { id: 9, src: "https://images.unsplash.com/photo-1615461066159-fea0960485d5?w=800", alt: "Medical room", size: "standard" },
-    { id: 10, src: "https://images.unsplash.com/photo-1581594693702-fbdc51b2763b?w=800", alt: "Outdoor space", size: "standard" },
-    { id: 11, src: "https://images.unsplash.com/photo-1586773860418-d37222d8fce3?w=800", alt: "Staff area", size: "standard" },
-    { id: 12, src: "https://images.unsplash.com/photo-1516549655169-df83a0774514?w=800", alt: "Relaxation zone", size: "standard" },
+    { id: 1, src: img2.src, alt: "Waiting Room", size: "large" },
+    { id: 2, src: img3.src, alt: "Doctor's Office", size: "standard" },
+    { id: 3, src: img1.src, alt: "Entrance", size: "portrait" },
+    { id: 4, src: img4.src, alt: "Patients Room", size: "standard" },
+    { id: 5, src: img5.src, alt: "Reception Area", size: "standard" },
+    { id: 6, src: img6.src, alt: "Corridor", size: "standard" },
+    { id: 7, src: img8.src, alt: "Treatment Room", size: "standard" },
+    { id: 8, src: img7.src, alt: "Patient Care Room", size: "standard" },
+    { id: 9, src: img10.src, alt: "Dining Tables", size: "standard" },
+    { id: 10, src: img9.src, alt: "Motorized Tilt Table", size: "standard" },
+    { id: 11, src: img12.src, alt: "Staying Room", size: "standard" },
+    { id: 12, src: img11.src, alt: "Dining Area", size: "standard" },
   ];
 
   const openLightbox = (index: number) => {
@@ -57,7 +70,7 @@ export default function GalleryPage() {
 
       {/* Gallery Section */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
-        <div className=" container mx-auto">
+        <div className=" max-w-7xl 2xl:container mx-auto">
           {/* Masonry Grid Layout */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 auto-rows-[240px] gap-4">
             {/* Large Image - spans 2x2 */}
