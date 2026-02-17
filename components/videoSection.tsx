@@ -26,7 +26,7 @@ function VideoSection() {
   };
 
   return (
-    <div className="relative w-full h-[210px] lg:h-[750px] overflow-hidden">
+    <div className="relative w-full h-52.5 lg:h-187.5 overflow-hidden">
       {/* Image Container */}
       <div className="relative w-full h-full">
         {slides.map((slide, index) => (
