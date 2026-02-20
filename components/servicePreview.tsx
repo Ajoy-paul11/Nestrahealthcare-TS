@@ -3,6 +3,7 @@ import Image from "next/image";
 import doctor from "../public/doctor-demo-image.jpg";
 import Link from "next/link";
 import {
+    IconUsers,
     IconHomeHeart,
     IconSun,
     IconExchange,
@@ -18,6 +19,10 @@ import {
 } from "@tabler/icons-react";
 
 const doctorDetails = [
+  {
+    name: "Retirement Homes",
+    icon: IconUsers,
+  },
   {
     name: "Assisted Living",
     icon: IconHomeHeart,
