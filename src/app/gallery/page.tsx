@@ -5,7 +5,7 @@ import { useState } from "react";
 import Link from "next/link";
 import img1 from "../../../public/gallery1.jpg";
 import img2 from "../../../public/gallery4.jpg";
-import img3 from "../../../public/gallery7.png";
+import img3 from "../../../public/gallery7.jpg";
 import img4 from "../../../public/gallery13.jpg";
 import img5 from "../../../public/gallery15.jpg";
 import img6 from "../../../public/gallery17.jpg";
