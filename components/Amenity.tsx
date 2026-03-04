@@ -66,7 +66,7 @@ function Amenitie() {
   return (
     <section id="amenities" className=" py-16 bg-white">
       <div className=" container mx-auto px-4">
-        <div className=" w-[180px] h-[40px] mx-auto my-4 cta-bg-color rounded-tl-full rounded-br-full flex justify-center items-center">
+        <div className=" w-45 h-10 mx-auto my-4 cta-bg-color rounded-tl-full rounded-br-full flex justify-center items-center">
           <h2 className=" text-white text-xl lg:text-3xl font-bold">Amenities</h2>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 ">

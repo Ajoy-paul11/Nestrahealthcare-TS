@@ -91,7 +91,7 @@ export default function ServicesPage() {
                   className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 hover:scale-105"
                 >
                   <div
-                    className={`w-12 h-12 lg:w-16 lg:h-16 bg-gradient-to-br ${service.color} rounded-2xl flex items-center justify-center mb-6 shadow-lg`}
+                    className={`w-12 h-12 lg:w-16 lg:h-16 bg-linear-to-br ${service.color} rounded-2xl flex items-center justify-center mb-6 shadow-lg`}
                   >
                     <Icon className="text-white" size={32} />
                   </div>
@@ -120,7 +120,7 @@ export default function ServicesPage() {
                 key={index}
                 className="flex items-start space-x-4 bg-white bg-opacity-5 backdrop-blur-sm rounded-xl p-6 border border-white border-opacity-10 hover:bg-opacity-10 transition-all duration-300"
               >
-                <div className="flex-shrink-0">
+                <div className=" shrink-0">
                   <IconCircleCheckFilled className=" text-highlight" size={28} />
                 </div>
                 <p className=" text-sm lg:text-lg leading-relaxed capitalize">{benefit}</p>
@@ -142,7 +142,7 @@ export default function ServicesPage() {
 
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-6xl mx-auto">
-          <div className="bg-gradient-to-br from-[#2F9D94]/60 to-[#2F9D94]/20 rounded-3xl p-12 text-center">
+          <div className="bg-linear-to-br from-[#2F9D94]/60 to-[#2F9D94]/20 rounded-3xl p-12 text-center">
             <h2 className="text-2xl lg:text-4xl font-bold text-highlight mb-6">
               Ready to Experience Quality Care?
             </h2>

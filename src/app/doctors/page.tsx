@@ -92,7 +92,7 @@ export default function DoctorsPage() {
                       alt={doctor.name}
                       className="w-full h-full object-contain"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-transparent to-transparent"></div>
+                    <div className="absolute inset-0 bg-linear-to-t from-gray-900 via-transparent to-transparent"></div>
                     <div className="absolute bottom-6 left-6 text-white">
                       <h3 className="text-xl lg:text-3xl font-bold">{doctor.name}</h3>
                       <p className="text-emerald-400 text-sm lg:text-lg font-medium">
@@ -107,7 +107,7 @@ export default function DoctorsPage() {
                     <div className="bg-white rounded-2xl p-6 shadow-lg border border-gray-100">
                       <div className="flex items-start space-x-3 mb-3">
                         <IconAward
-                          className="text-emerald-600 flex-shrink-0 mt-1"
+                          className="text-emerald-600 shrink-0 mt-1"
                           size={24}
                         />
                         <div>
@@ -124,7 +124,7 @@ export default function DoctorsPage() {
                     <div className="bg-white rounded-2xl p-6 shadow-lg border border-gray-100">
                       <div className="flex items-start space-x-3 mb-3">
                         <IconBriefcase
-                          className="text-emerald-600 flex-shrink-0 mt-1"
+                          className="text-emerald-600 shrink-0 mt-1"
                           size={24}
                         />
                         <div>
@@ -139,7 +139,7 @@ export default function DoctorsPage() {
                     <div className="bg-white rounded-2xl p-6 shadow-lg border border-gray-100">
                       <div className="flex items-start space-x-3 mb-3">
                         <IconHeart
-                          className="text-emerald-600 flex-shrink-0 mt-1"
+                          className="text-emerald-600 shrink-0 mt-1"
                           size={24}
                         />
                         <div>
@@ -151,7 +151,7 @@ export default function DoctorsPage() {
                       </div>
                     </div>
 
-                    <div className="bg-gradient-to-br from-emerald-50 to-teal-50 rounded-2xl p-6 border border-emerald-200">
+                    <div className="bg-linear-to-br from-emerald-50 to-teal-50 rounded-2xl p-6 border border-emerald-200">
                       <h4 className="font-bold text-gray-900 text-sm lg:text-lg mb-2">
                         Approach
                       </h4>
@@ -209,7 +209,7 @@ export default function DoctorsPage() {
 
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-4xl mx-auto text-center">
-          <div className="bg-gradient-to-br from-gray-50 to-gray-100 rounded-3xl p-12">
+          <div className="bg-linear-to-br from-gray-50 to-gray-100 rounded-3xl p-12">
             <h2 className=" text-xl lg:text-3xl font-bold text-highlight mb-6">
               Experience World-Class Care
             </h2>

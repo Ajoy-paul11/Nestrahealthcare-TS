@@ -79,9 +79,9 @@ export default function AssistedLivingPage() {
           <img
             src={image1.src}
             alt="Assisted Living"
-            className="w-full h-[270px] lg:h-[450px] object-cover bg-center "
+            className="w-full h-67.5 lg:h-112.5 object-cover bg-center "
           />
-          <div className="hidden xl:block absolute inset-0 from-80% from-transparent to-100% to-white bg-gradient-to-r"></div>
+          <div className="hidden xl:block absolute inset-0 from-80% from-transparent to-100% to-white bg-linear-to-r"></div>
         </div>
         <div className="max-w-1/2 mx-auto text-center px-2 md:px-6">
           <h2 className="text-2xl lg:text-4xl font-bold text-highlight mb-6">
@@ -120,7 +120,7 @@ export default function AssistedLivingPage() {
                   className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-100"
                 >
                   <div className=" flex items-center justify-center gap-4 md:gap-6 ">
-                    <div className="flex-shrink-0">
+                    <div className=" shrink-0">
                       <div className="w-10 h-10 md:w-16 md:h-16 bg-[#d75fa4] rounded-full flex items-center justify-center mb-6">
                         <Icon className="text-white w-5 h-5 md:w-8 md:h-8" />
                       </div>
@@ -164,14 +164,14 @@ export default function AssistedLivingPage() {
           <img
             src={image2.src}
             alt="Assisted Living"
-            className="w-full h-[300px] lg:h-[500px] object-cover bg-center "
+            className="w-full h-75 lg:h-125 object-cover bg-center "
           />
-          <div className="hidden xl:block absolute inset-0 from-0% from-white to-25% to-transparent bg-gradient-to-r"></div>
+          <div className="hidden xl:block absolute inset-0 from-0% from-white to-25% to-transparent bg-linear-to-r"></div>
         </div>
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-[#025F67] to-[#2F9D94]">
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-linear-to-br from-[#025F67] to-[#2F9D94]">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-2xl lg:text-4xl font-bold mb-6 text-white">
             Ready to Learn More?

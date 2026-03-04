@@ -95,7 +95,7 @@ export default function ContactPage() {
 
               <div className="space-y-6">
                 <div className="flex items-start space-x-4 bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300">
-                  <div className="w-12 h-12 green-shade-bg rounded-full flex items-center justify-center flex-shrink-0">
+                  <div className="w-12 h-12 green-shade-bg rounded-full flex items-center justify-center shrink-0">
                     <IconPhoneCall className="text-white" size={24} />
                   </div>
                   <div>
@@ -112,7 +112,7 @@ export default function ContactPage() {
                 </div>
 
                 <div className="flex items-start space-x-4 bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300">
-                  <div className="w-12 h-12 green-shade-bg rounded-full flex items-center justify-center flex-shrink-0">
+                  <div className="w-12 h-12 green-shade-bg rounded-full flex items-center justify-center shrink-0">
                     <IconMail className="text-white" size={24} />
                   </div>
                   <div>
@@ -133,7 +133,7 @@ export default function ContactPage() {
                   rel="noopener noreferrer"
                 >
                   <div className="flex items-start space-x-4 bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300">
-                    <div className="w-12 h-12 green-shade-bg rounded-full flex items-center justify-center flex-shrink-0">
+                    <div className="w-12 h-12 green-shade-bg rounded-full flex items-center justify-center shrink-0">
                       <IconMapPin className="text-white" size={24} />
                     </div>
                     <div>
@@ -285,7 +285,7 @@ export default function ContactPage() {
             Visit Us
           </h2>
           <div className="bg-white rounded-3xl overflow-hidden shadow-2xl">
-            <div className="aspect-w-16 aspect-h-9 h-96 md:h-[500px]">
+            <div className="aspect-w-16 aspect-h-9 h-96 md:h-125">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4413.274159484599!2d77.6281769!3d13.040741099999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1713839491a1%3A0x50ca1d716263feb1!2sNestra%20Health%20Care!5e1!3m2!1sen!2sin!4v1767244743309!5m2!1sen!2sin"
                 width="100%"
@@ -300,7 +300,7 @@ export default function ContactPage() {
         </div>
       </section>
 
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-[#2F9D94]/90 to-[#2F9D94]/70 text-white">
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-linear-to-br from-[#2F9D94]/90 to-[#2F9D94]/70 text-white">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className=" text-2xl lg:text-4xl font-bold mb-6">
             At Nestra Healthcare, Your Family is Our Family

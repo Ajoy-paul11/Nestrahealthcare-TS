@@ -15,7 +15,7 @@ function NavbarDesign() {
 
   return (
     <header className=" m-0 z-50 sticky top-0 bg-[#F7F6F2] shadow-md">
-      <div className=" relative top-0 w-full z-50 2xl:max-w-[1860px] mx-auto">
+      <div className=" relative top-0 w-full z-50 2xl:max-w-465 mx-auto">
         <nav className=" relative py-5 lg:py-4.5 lg:px-10 flex items-center lg:flex-wrap lg:justify-start w-full">
           <div className=" flex flex-wrap items-center justify-between px-4 lg:px-0 p-0 w-full">
             <Link href={"/"}>
@@ -38,7 +38,7 @@ function NavbarDesign() {
 
             <div className=" hidden lg:flex items-center basis-auto">
               <div className=" flex flex-1 mx-[1.042vw]">
-                <ul className=" inline-flex items-center list-none p-0 py-[0.5rem]">
+                <ul className=" inline-flex items-center list-none p-0 py-2">
                   <li className=" mx-1.5 relative ">
                     <Link
                       href={"/"}

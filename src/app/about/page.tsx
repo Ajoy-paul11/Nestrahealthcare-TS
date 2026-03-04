@@ -132,7 +132,7 @@ export default function AboutPage() {
         </div>
       </section> */}
 
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-[#025F67] to-[#2F9D94] ">
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-linear-to-br from-[#025F67] to-[#2F9D94] ">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-2xl lg:text-4xl font-bold mb-8 text-white">Mission & Vision</h2>
 

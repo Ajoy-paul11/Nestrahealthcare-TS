@@ -67,7 +67,7 @@ function LeadForm({ setOpenLeadForm }: LeadFormProps) {
 
   return (
     <section className=" relative w-full h-screen flex justify-end items-center backdrop-blur-xs z-100">
-      <div className=" blue-shade-bg absolute bottom-1 border-1 rounded-3xl w-[70vw] md:w-[40vw] lg:w-[30vw] xl:w-[20vw] p-4 m-2 md:m-6 pt-12">
+      <div className=" blue-shade-bg absolute bottom-1 border rounded-3xl w-[70vw] md:w-[40vw] lg:w-[30vw] xl:w-[20vw] p-4 m-2 md:m-6 pt-12">
         <div className=" green-shade-bg p-1 rounded-2xl absolute right-2 top-2 cursor-pointer">
           <RxCross1
             className="h-4 w-4 text-white float-right cursor-pointer"
