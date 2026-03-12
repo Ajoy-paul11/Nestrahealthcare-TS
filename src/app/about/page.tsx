@@ -34,7 +34,9 @@ export default function AboutPage() {
                   professional.
                 </p>
                 <p>
-                Our center in Bangalore blends expert care with a homely environment, ensuring every guest feels engaged, respected, and supported throughout the day.
+                  Our center in Bangalore blends expert care with a homely
+                  environment, ensuring every guest feels engaged, respected,
+                  and supported throughout the day.
                 </p>
               </div>
             </div>
@@ -93,7 +95,9 @@ export default function AboutPage() {
                 Excellence in Care
               </h3>
               <p className="text-gray-700 leading-relaxed">
-              Experienced caregivers and wellness professionals dedicated to enriching every day — ensuring comfort, safety, and companionship for all.
+                Experienced caregivers and wellness professionals dedicated to
+                enriching every day — ensuring comfort, safety, and
+                companionship for all.
               </p>
             </div>
           </div>
@@ -134,11 +138,15 @@ export default function AboutPage() {
 
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-linear-to-br from-[#025F67] to-[#2F9D94] ">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-2xl lg:text-4xl font-bold mb-8 text-white">Mission & Vision</h2>
+          <h2 className="text-2xl lg:text-4xl font-bold mb-8 text-white">
+            Mission & Vision
+          </h2>
 
           <div className="grid md:grid-cols-2 gap-8 mt-12">
             <div className="bg-white bg-opacity-10 backdrop-blur-sm rounded-2xl p-8 border border-white border-opacity-20">
-              <h3 className=" text-lg lg:text-2xl font-bold mb-4 text-accent">Mission</h3>
+              <h3 className=" text-lg lg:text-2xl font-bold mb-4 text-accent">
+                Mission
+              </h3>
               <p className="text-sm lg:text-lg leading-relaxed">
                 To deliver personalized care that empowers residents to live
                 fulfilling, dignified lives.
@@ -146,10 +154,11 @@ export default function AboutPage() {
             </div>
 
             <div className="bg-white bg-opacity-10 backdrop-blur-sm rounded-2xl p-8 border border-white border-opacity-20">
-              <h3 className=" text-lg lg:text-2xl font-bold mb-4 text-accent">Vision</h3>
+              <h3 className=" text-lg lg:text-2xl font-bold mb-4 text-accent">
+                Vision
+              </h3>
               <p className="text-sm lg:text-lg leading-relaxed">
-                To be Bangalore's most trusted name in senior day
-                care.
+                To be Bangalore's most trusted name in senior day care.
               </p>
             </div>
           </div>
