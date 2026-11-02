@@ -71,16 +71,15 @@ function NavbarDesign() {
                     >
                       Doctors
                     </Link>
-                  </li>
+                  </li> */}
                   <li className=" mx-1.5 relative w-full">
                     <Link
-                      // href="/services"
-                      href="#"
+                      href="/services"
                       className=" text-base py-3 px-2.5 hover:text-[#063154] relative border-b-2 border-transparent hover:border-[#063154] transition-colors duration-300"
                     >
                       Services
                     </Link>
-                  </li> */}
+                  </li>
                   <li className=" mx-1.5 relative">
                     <Link
                       href="/contact"
@@ -149,7 +148,7 @@ function NavbarDesign() {
                 >
                   Doctors
                 </Link>
-              </li>
+              </li> */}
               <li className=" block lg:hidden py-2 px-5">
                 <Link
                   href="/services"
@@ -157,7 +156,7 @@ function NavbarDesign() {
                 >
                   Services
                 </Link>
-              </li> */}
+              </li>
               <li onClick={handleNavMenu} className=" block lg:hidden py-2 px-5">
                 <Link
                   href="/contact"

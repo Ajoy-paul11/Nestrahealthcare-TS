@@ -12,6 +12,8 @@ import LeadForm from "../../components/leadForm";
 import ServicePreview from "../../components/servicePreview";
 import DoctorProfile from "../../components/doctorProfile";
 import doctor1 from "../../public/doctor1.jpeg";
+import doctor2 from "../../public/doctor2.jpeg";
+import DoctorProfileSecond from "../../components/doctorProfileSecond";
 
 export default function Home() {
   const [openForm, setOpenForm] = useState(false);
@@ -26,6 +28,7 @@ export default function Home() {
       <AboutSection />
       <MarqueeSection />
       <DoctorProfile imageSrc={doctor1.src}/>
+      <DoctorProfileSecond imageSrc={doctor2.src}/>
       <VideoSection />
       {/* <DoctorPreview /> */}
       {/* <ReviewsCarousel /> */}

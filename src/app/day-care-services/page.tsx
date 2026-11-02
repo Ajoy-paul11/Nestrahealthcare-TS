@@ -11,9 +11,18 @@ import {
 import Link from "next/link";
 import image1 from "../../../public/assisted-living.jpg";
 import image2 from "../../../public/assisted-living2.png";
+import type { IconProps } from "@tabler/icons-react";
 
-export default function AssistedLivingPage() {
-  const features = [
+interface Feature {
+  icon: React.ForwardRefExoticComponent<
+    IconProps & React.RefAttributes<SVGSVGElement>
+  >;
+  title: string;
+  description: string;
+}
+
+export default function DayCareServicesPage() {
+  const features: Feature[] = [
     {
       icon: IconClipboardCheck,
       title: "Personalized Care Plans",
@@ -64,7 +73,7 @@ export default function AssistedLivingPage() {
       <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8 blue-shade-bg text-white-background">
         <div className="max-w-7xl mx-auto text-center">
           <h1 className="text-4xl md:text-6xl font-bold mb-6">
-          Day Care Services
+            Day Care Services
           </h1>
           <p className="text-lg md:text-xl max-w-3xl mx-auto mb-8 text-white/90">
             Live independently with the support you need
@@ -85,11 +94,16 @@ export default function AssistedLivingPage() {
         </div>
         <div className="max-w-1/2 mx-auto text-center px-2 md:px-6">
           <h2 className="text-2xl lg:text-4xl font-bold text-highlight mb-6">
-          Introduction
+            What is Day Care Services?
           </h2>
           <p className="text-sm lg:text-lg text-gray-700 leading-relaxed">
-          At Nestra Healthcare, our Day Care Services provide seniors with a safe, supportive, and engaging environment during the day while offering families complete peace of mind. Whether your loved one needs supervision, medical attention, or simply meaningful companionship, our center ensures they are cared for with warmth and respect.
-          We combine professional healthcare support with social interaction, activities, and wellness routines — helping seniors stay active, independent, and emotionally connected while returning home comfortably each evening.
+            Senior Day Care is a structured daytime care program for older
+            adults who require supervision, health support, or companionship
+            while their families are at work or managing other responsibilities.
+            It bridges the gap between home care and full-time residential care.
+            At Nestra, Day Care blends professional medical support with a
+            homely atmosphere — ensuring every senior feels valued, active, and
+            cared for, every single day.
           </p>
         </div>
       </section>
@@ -137,15 +151,23 @@ export default function AssistedLivingPage() {
       {/* What is Assisted Living Section */}
       <section className=" relative flex flex-col xl:flex-row items-center gap-6 bg-white">
         <div className="max-w-1/2 mx-auto text-center px-2 md:px-6">
-          <h2 className="text-2xl lg:text-4xl font-bold text-highlight mb-6">
-          What is Day Care Services?
-          </h2>
+          {/* <h2 className="text-2xl lg:text-4xl font-bold text-highlight mb-6">
+            What is Day Care Services?
+          </h2> */}
           <div className="space-y-4 text-sm lg:text-lg text-gray-700 leading-relaxed">
             <p>
-            Senior Day Care is a structured daytime care program for older adults who require supervision, health support, or companionship while their families are at work or managing other responsibilities. It bridges the gap between home care and full-time residential care.
+              At Nestra Healthcare, our Day Care Services provide seniors with a
+              safe, supportive, and engaging environment during the day while
+              offering families complete peace of mind. Whether your loved one
+              needs supervision, medical attention, or simply meaningful
+              companionship, our center ensures they are cared for with warmth
+              and respect.
             </p>
             <p>
-            At Nestra, Day Care blends professional medical support with a homely atmosphere — ensuring every senior feels valued, active, and cared for, every single day.
+              We combine professional healthcare support with social
+              interaction, activities, and wellness routines — helping seniors
+              stay active, independent, and emotionally connected while
+              returning home comfortably each evening.
             </p>
           </div>
         </div>

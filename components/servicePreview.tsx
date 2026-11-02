@@ -3,77 +3,79 @@ import Image from "next/image";
 import doctor from "../public/doctor-demo-image.jpg";
 import Link from "next/link";
 import {
-    IconUsers,
-    IconHomeHeart,
-    IconSun,
-    IconExchange,
-    IconAdjustmentsCheck,
-    IconBrain,
-    IconLeaf,
-    IconRecharging,
-    IconBuildingHospital,
-    IconMicroscope,
-    IconStretching,
-    IconPill,
-    IconArrowRight
+  IconUsers,
+  IconHomeHeart,
+  IconSun,
+  IconExchange,
+  IconAdjustmentsCheck,
+  IconBrain,
+  IconLeaf,
+  IconRecharging,
+  IconBuildingHospital,
+  IconMicroscope,
+  IconStretching,
+  IconPill,
+  IconArrowRight,
 } from "@tabler/icons-react";
 
 const doctorDetails = [
   {
     name: "Retirement Homes",
     icon: IconUsers,
+    subpage: "/retirement-homes",
   },
   {
     name: "Assisted Living",
     icon: IconHomeHeart,
-    subpage: "/assisted-living"
+    subpage: "/assisted-living",
   },
   {
     name: "Day Care Services",
     icon: IconSun,
+    // subpage: "/day-care-services",
   },
   {
     name: "Transition Care",
-    icon: IconExchange
+    icon: IconExchange,
   },
   {
     name: "Rehabilitation Care",
-    icon: IconAdjustmentsCheck
+    icon: IconAdjustmentsCheck,
   },
   {
     name: "Mind & Memory Care",
     icon: IconBrain,
-    subpage: "/mind-and-memory-care"
+    subpage: "/mind-and-memory-care",
   },
   {
     name: "Palliative Care",
-    icon: IconLeaf
+    icon: IconLeaf,
   },
   {
     name: "Respite Care",
-    icon: IconRecharging
+    icon: IconRecharging,
   },
   {
     name: "Multi Speciality Clinic",
-    icon: IconBuildingHospital
+    icon: IconBuildingHospital,
   },
   {
     name: "Diagnostics",
-    icon: IconMicroscope
+    icon: IconMicroscope,
   },
   {
     name: "Physiotherapy",
-    icon: IconStretching
+    icon: IconStretching,
   },
   {
     name: "Pharmacy",
-    icon: IconPill
+    icon: IconPill,
   },
 ];
 
 function ServicePreview() {
   return (
-    <div className="w-full   mx-auto px-5 py-10 md:py-16">
+    <div className="w-full mx-auto px-5 py-10 md:py-16">
       <div className="text-center mb-10 md:mb-14">
         <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-highlight mb-3">
           Our Services

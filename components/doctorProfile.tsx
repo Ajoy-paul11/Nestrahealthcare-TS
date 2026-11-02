@@ -33,12 +33,12 @@ const DoctorProfile: React.FC<Props> = ({ imageSrc = "/doctor.jpg" }) => {
           <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
             <div>
               <h2 id="doctor-heading" className="text-xl md:text-2xl lg:text-4xl font-semibold text-[#d75fa4]">
-                Dr. Hajira Shahid
+              Dr Shreyas N
               </h2>
               <p className="mt-1 text-sm md:text-base lg:text-xl font-medium text-accent">
-                MBBS | GMC-Registered (UK)
+              MBBS, MS (General Surgery), DNB (Genito-urinary surgery)
               </p>
-              <p className="mt-1 text-sm md:text-lg text-foreground">Medical Officer - Nestra Healthcare</p>
+              <p className="mt-1 text-sm md:text-lg text-foreground">Experience: 16 yrs</p>
             </div>
 
             {/* badges */}
@@ -56,7 +56,7 @@ const DoctorProfile: React.FC<Props> = ({ imageSrc = "/doctor.jpg" }) => {
           </div>
 
           {/* professional summary */}
-          <div className="mt-4">
+          {/* <div className="mt-4">
             <h3 className=" text-base lg:text-lg font-semibold text-foreground">Doctor's Profile</h3>
             <p className="mt-2 text-xs md:text-lg leading-relaxed text-foreground">
               Dr. Hajira Shahid is a medical officer at Nestra Healthcare, working in palliative care,
@@ -64,36 +64,51 @@ const DoctorProfile: React.FC<Props> = ({ imageSrc = "/doctor.jpg" }) => {
               medical management for patients with chronic, progressive and life-limiting illnesses —
               emphasising comfort, dignity and quality of life.
             </p>
-          </div>
+          </div> */}
 
           {/* two-column details */}
           <div className="mt-4 grid grid-cols-1 gap-4">
             <div>
-              <h4 className=" text-sm lg:text-lg font-semibold text-foreground">Education & Training</h4>
+              <h4 className=" text-sm lg:text-lg font-semibold text-foreground">Area of Special Interest</h4>
               <ul className="mt-2 list-disc list-outside pl-5 space-y-1 text-xs lg:text-base text-foreground">
-                <li>MBBS — Mahsa University, Malaysia</li>
-                <li>Clinical Internship — Vydehi Institute of Medical Sciences</li>
-                <li>GMC Registration (UK) — Registered practitioner</li>
+                <li>Uro oncology- cancers involving kidney, urinary bladder, prostate, testis, penis & adrenal gland</li>
+                <li>Laparoscopic and robotic urology</li>
+                <li>Reconstructive urology- pyeloplasty, urethroplasty, hypospadias repair</li>
+                <li>Renal transplant surgery- donor nephrectomy and recipient transplantation</li>
+                <li>Endourological procedures for ureter and kidney stones, laser procedures for prostate</li>
+                <li>Robotic surgery</li>
               </ul>
             </div>
+            <div>
+              <h4 className=" text-sm lg:text-lg font-semibold text-foreground">Awards & Recognitions</h4>
+              <ol className="mt-2 list-decimal list-outside pl-5 space-y-1 text-xs lg:text-base text-foreground">
+                <li>Expertise in endo urology procedure including mini PCNL, supine PCNL, RIRS</li>
+                <li>Performed over 200 laser prostate surgery and BMG urethroplasty</li>
+                <li>Performed and has immense experience in radical and minimally invasive surgical procedures for malignancies of all organs of genitourinary system</li>
+                <li>Participated in over 150 renal transplant surgeries</li>
+                <li>Performed many complex pediatric and adult genitourinary reconstructive surgeries</li>
+                <li>Skilled in performing USG guided procedures of kidney and prostate</li>
+              </ol>
+            </div>
 
-            {/* <div>
-              <h4 className="text-sm font-medium text-[var(--foreground)]">Focus Areas</h4>
-              <ul className="mt-2 space-y-2 text-sm text-[var(--foreground)]">
-                <li className="flex items-start gap-2">
-                  <span className="mt-1 inline-block w-2 h-2 rounded-full" style={{ background: "var(--accent-tertiary-color)" }} />
-                  <span>Palliative care</span>
+            <div>
+              <h4 className="text-sm text-foreground font-semibold">Publications</h4>
+              <ul className="mt-2 space-y-2 text-sm text-foreground">
+                <li className="flex items-center gap-2">
+                  <span className=" inline-block w-2 h-2 rounded-full" style={{ background: "var(--accent-tertiary-color)" }} />
+                  <span> Has numerous presentations and publications to his credit
+                  </span>
                 </li>
-                <li className="flex items-start gap-2">
-                  <span className="mt-1 inline-block w-2 h-2 rounded-full" style={{ background: "var(--accent-tertiary-color)" }} />
-                  <span>Assisted living</span>
+                <li className="flex items-center gap-2">
+                  <span className=" inline-block w-2 h-2 rounded-full" style={{ background: "var(--accent-tertiary-color)" }} />
+                  <span> Attended various workshops and conferences nationally and internationally</span>
                 </li>
-                <li className="flex items-start gap-2">
+                {/* <li className="flex items-start gap-2">
                   <span className="mt-1 inline-block w-2 h-2 rounded-full" style={{ background: "var(--accent-tertiary-color)" }} />
                   <span>Physical medicine & rehabilitation</span>
-                </li>
+                </li> */}
               </ul>
-            </div> */}
+            </div>
           </div>
 
           {/* actions */}
