@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
 import Link from "next/link";
-// import { ServiceNav } from "../../../components/serviceNav";
 
 export const metadata: Metadata = {
   title: "Home Care Services | Nestra Health Care",
@@ -60,7 +59,7 @@ const attendantTasks = [
 
 const doctorServices = [
   {
-    title: "GP & Geriatrician visits",
+    title: "GP & Geriatrician home visits",
     text: "Home visits by a general physician or an elderly specialist.",
   },
   {
@@ -271,60 +270,6 @@ export default function ServicesPage() {
               </Link>
             </div>
           </div>
-
-          {/* Hero visual */}
-          {/* <div className="nestra-rise relative mx-auto w-full max-w-md" style={{ animationDelay: "120ms" }}>
-            <div className="green-shade-bg relative aspect-[4/5] overflow-hidden rounded-[2.5rem] p-8 shadow-[0_30px_60px_-30px_rgba(6,49,84,0.55)]">
-              <div
-                aria-hidden="true"
-                className="absolute -bottom-24 -left-16 h-72 w-72 rounded-full bg-[var(--accent-tertiary-color)]/40"
-              />
-              <div
-                aria-hidden="true"
-                className="absolute -right-10 top-10 h-40 w-40 rounded-full bg-[var(--background)]/10"
-              />
-
-              <svg
-                viewBox="0 0 320 300"
-                className="absolute inset-x-0 bottom-0 w-full"
-                role="img"
-                aria-label="Illustration of a home with a heart"
-              >
-                <path d="M30 290V150L160 50l130 100v140Z" fill="#F7F6F2" />
-                <path d="M10 156 160 38l150 118" fill="none" stroke="#BCC5CC" strokeWidth="10" strokeLinecap="round" strokeLinejoin="round" />
-                <rect x="132" y="190" width="56" height="100" rx="10" fill="#063154" />
-                <circle cx="176" cy="242" r="3.5" fill="#F7F6F2" />
-                <rect x="58" y="162" width="46" height="46" rx="8" fill="#BCC5CC" />
-                <rect x="216" y="162" width="46" height="46" rx="8" fill="#BCC5CC" />
-                <path
-                  d="M160 142s-26-15-31-31a15 15 0 0 1 31-6 15 15 0 0 1 31 6c-5 16-31 31-31 31Z"
-                  fill="#2F9D94"
-                />
-              </svg>
-
-              <ul className="relative flex flex-col items-start gap-3">
-                {[
-                  { label: "Nursing at home", icon: "heart" },
-                  { label: "Doctor visits", icon: "doctor" },
-                  { label: "Physiotherapy", icon: "pulse" },
-                ].map((chip, i) => (
-                  <li
-                    key={chip.label}
-                    className="nestra-rise flex items-center gap-2 rounded-full bg-[var(--background)] py-2 pl-3 pr-4 text-sm font-semibold text-[var(--accent-color)] shadow-lg"
-                    style={{
-                      animationDelay: `${450 + i * 140}ms`,
-                      marginLeft: `${i * 28}px`,
-                    }}
-                  >
-                    <span className="text-[var(--accent-tertiary-color)]">
-                      <Icon name={chip.icon as keyof typeof ICONS} className="h-5 w-5" />
-                    </span>
-                    {chip.label}
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div> */}
         </div>
       </section>
 
@@ -339,7 +284,7 @@ export default function ServicesPage() {
             </span>
             <SectionHeading
               tone="dark"
-              title="Nursing care at home"
+              title="Nursing Care at Home"
               tagline="24x7 professional nursing support at home."
             />
           </div>
@@ -348,7 +293,7 @@ export default function ServicesPage() {
             {/* Daily */}
             <article className="rounded-3xl bg-background p-7 sm:p-9">
               <h3 className="text-xl font-bold text-(--accent-color)">
-                Daily nursing care
+                Daily Nursing Care
               </h3>
 
               <div className="mt-5 flex flex-wrap gap-2">
@@ -392,7 +337,7 @@ export default function ServicesPage() {
             {/* Special */}
             <article className="rounded-3xl border border-(--accent-secondary-color)/30 bg-foreground p-7 sm:p-9">
               <h3 className="text-xl font-bold text-background">
-                Special nursing care
+                Special Nursing Care
               </h3>
               <p className="mt-2 text-[0.95rem] leading-relaxed text-(--accent-secondary-color)">
                 Experienced nursing for conditions that need closer attention.
@@ -420,7 +365,7 @@ export default function ServicesPage() {
               <Icon name="users" className="h-7 w-7" />
             </span>
             <SectionHeading
-              title="Patient attendants & caregivers"
+              title="Patient Attendants & Caregivers"
               tagline="For daily help & companionship."
             />
           </div>
@@ -476,7 +421,7 @@ export default function ServicesPage() {
               <Icon name="doctor" className="h-7 w-7" />
             </span>
             <SectionHeading
-              title="Doctor visit at home"
+              title="Doctor Visit at Home"
               // tagline="Medical consultation without the trip to the clinic."
             />
           </div>
@@ -537,7 +482,7 @@ export default function ServicesPage() {
               <Icon name="bed" className="h-7 w-7" />
             </span>
             <SectionHeading
-              title="Medical equipment on rent & sale"
+              title="Medical Equipment on Rent & Sale"
               // tagline="Everything needed for safe care at home, available to rent or buy."
             />
           </div>
