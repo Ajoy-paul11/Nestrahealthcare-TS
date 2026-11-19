@@ -31,7 +31,7 @@ export function ServiceNav({ items }: { items: NavItem[] }) {
   return (
     <nav
       aria-label="Services"
-      className="sticky top-[var(--header-h,0px)] z-30 border-y border-[var(--accent-secondary-color)]/60 bg-[var(--background)]/90 backdrop-blur"
+      className="sticky top-(--header-h,0px) z-30 border-y border-(--accent-secondary-color)/60 bg-(--background)/90 backdrop-blur"
     >
       <ul className="no-scrollbar mx-auto flex max-w-6xl gap-2 overflow-x-auto px-4 py-3 sm:px-6">
         {items.map((item) => {
@@ -41,10 +41,10 @@ export function ServiceNav({ items }: { items: NavItem[] }) {
               <a
                 href={`#${item.id}`}
                 aria-current={isActive ? "true" : undefined}
-                className={`inline-flex items-center rounded-full px-4 py-2 text-sm font-semibold transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--accent-tertiary-color)] ${
+                className={`inline-flex items-center rounded-full px-4 py-2 text-sm font-semibold transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-(--accent-tertiary-color) ${
                   isActive
-                    ? "bg-[var(--accent-color)] text-[var(--background)]"
-                    : "text-[var(--accent-color)] hover:bg-[var(--accent-secondary-color)]/40"
+                    ? "bg-(--accent-color) text-background"
+                    : "text-(--accent-color) hover:bg-(--accent-secondary-color)/40"
                 }`}
               >
                 {item.label}
