@@ -163,7 +163,7 @@ Additional services showcased include Palliative Care, Respite Care, Multi-Speci
 
 | Services Page | Contact Page |
 |:---:|:---:|
-| ![Services Page](./public/screenshots/services.png) | ![Contact Page](./public/screenshots/contact.png) |
+| ![Services Page](./public/screenshots/contact.png) | ![Contact Page](./public/screenshots/services.png) |
 
 ## 🌐 Live Website
 
